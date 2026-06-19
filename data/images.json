@@ -1,29 +1,9 @@
 [
   {
-    "id": 1781867014556,
-    "image_url": "/images/1781867014556_image_10.webp",
-    "blur_image_url": "/images/1781867014556_image_10_blur.webp",
-    "author": "aa",
-    "model": "newbie",
-    "params": {},
-    "nsfw": false,
-    "created_at": "2026-06-19T11:03:36.540Z"
-  },
-  {
-    "id": 1781866986882,
-    "image_url": "/images/1781866986882_ComfyUI_00027.webp",
-    "blur_image_url": "/images/1781866986882_ComfyUI_00027_blur.webp",
-    "author": "aa",
-    "model": "newbie",
-    "params": {},
-    "nsfw": false,
-    "created_at": "2026-06-19T11:03:07.780Z"
-  },
-  {
-    "id": 1781866970824,
-    "image_url": "/images/1781866970824_ComfyUI_00090.webp",
-    "blur_image_url": "/images/1781866970824_ComfyUI_00090_blur.webp",
-    "author": "aa2l",
+    "id": 1781876430138,
+    "image_url": "/images/1781876430138_ComfyUI_00027.webp",
+    "blur_image_url": "/images/1781876430138_ComfyUI_00027_blur.webp",
+    "author": "a",
     "model": "anima",
     "params": {
       "model_name": "Anima base V10.safetensors",
@@ -44,99 +24,111 @@
       "seed": "",
       "workflow_json": ""
     },
-    "nsfw": true,
-    "created_at": "2026-06-19T11:02:51.764Z"
+    "nsfw": false,
+    "created_at": "2026-06-19T13:40:31.052Z"
   },
   {
-    "id": 1781866934171,
-    "image_url": "/images/1781866934171_摩西以斯拉.webp",
-    "blur_image_url": "/images/1781866934171_摩西以斯拉_blur.webp",
-    "author": "a",
-    "model": "nai",
+    "id": 1781876395650,
+    "image_url": "/images/1781876395650_image_23.webp",
+    "blur_image_url": "/images/1781876395650_image_23_blur.webp",
+    "author": "1",
+    "model": "sd",
     "params": {
-      "model_name": "Noval AI v4.5",
-      "style_prompt": "::0.8::artist:patzzi::,0.6::su_reut,::0.6::artist:na_tarapisu153,::",
-      "quality_prompt": "very aesthetic, masterpiece,",
-      "nl": "",
-      "base_prompt": "",
-      "undesired_content": "lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,signature,watermark,username,artist ,name,2::Weapon,",
-      "resolution": "832×1216",
-      "steps": 28,
-      "prompt_guidance": 5.5,
-      "variety": "on",
+      "model_name": "waiNSFWIllustrious_v150.safetensors",
+      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
+      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
+      "positive_prompt": "",
+      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
+      "loras": [
+        ""
+      ],
+      "resolution": "1616x1064",
+      "steps": 34,
+      "cfg_scale": 5.5,
+      "denoise": 1,
       "sampler": "Euler a",
-      "schedule": "karras",
+      "schedule": "Karras",
       "seed": "",
-      "characters": [
-        {
-          "name": "Character 1",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 2",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 3",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 4",
-          "prompt": "",
-          "undesired_content": ""
-        }
-      ]
+      "extra_params": "",
+      "workflow_json": ""
     },
     "nsfw": true,
-    "created_at": "2026-06-19T11:02:17.459Z"
+    "created_at": "2026-06-19T13:39:56.620Z"
   },
   {
-    "id": 1781866888040,
-    "image_url": "/images/1781866888040_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-880170561.webp",
-    "blur_image_url": "/images/1781866888040_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-880170561_blur.webp",
-    "author": "a",
-    "model": "nai",
+    "id": 1781876367101,
+    "image_url": "/images/1781876367101_image_10.webp",
+    "blur_image_url": "/images/1781876367101_image_10_blur.webp",
+    "author": "1",
+    "model": "sd",
     "params": {
-      "model_name": "Noval AI v4.5",
-      "style_prompt": "::0.8::artist:patzzi::,0.6::su_reut,::0.6::artist:na_tarapisu153,::",
-      "quality_prompt": "very aesthetic, masterpiece,",
-      "nl": "",
-      "base_prompt": "",
-      "undesired_content": "lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,signature,watermark,username,artist ,name,2::Weapon,",
-      "resolution": "832×1216",
-      "steps": 28,
-      "prompt_guidance": 5.5,
-      "variety": "on",
+      "model_name": "waiNSFWIllustrious_v150.safetensors",
+      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
+      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
+      "positive_prompt": "",
+      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
+      "loras": [
+        ""
+      ],
+      "resolution": "1616x1064",
+      "steps": 34,
+      "cfg_scale": 5.5,
+      "denoise": 1,
       "sampler": "Euler a",
-      "schedule": "karras",
+      "schedule": "Karras",
       "seed": "",
-      "characters": [
-        {
-          "name": "Character 1",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 2",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 3",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 4",
-          "prompt": "",
-          "undesired_content": ""
-        }
-      ]
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-19T13:39:28.938Z"
+  },
+  {
+    "id": 1781876352576,
+    "image_url": "/images/1781876352576_image_13.webp",
+    "blur_image_url": "/images/1781876352576_image_13_blur.webp",
+    "author": "1",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v150.safetensors",
+      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
+      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
+      "positive_prompt": "",
+      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
+      "loras": [
+        ""
+      ],
+      "resolution": "1616x1064",
+      "steps": 34,
+      "cfg_scale": 5.5,
+      "denoise": 1,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "",
+      "extra_params": "",
+      "workflow_json": ""
     },
     "nsfw": true,
-    "created_at": "2026-06-19T11:01:31.021Z"
+    "created_at": "2026-06-19T13:39:14.052Z"
+  },
+  {
+    "id": 1781876319479,
+    "image_url": "/images/1781876319479_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-3958145824.webp",
+    "blur_image_url": "/images/1781876319479_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-3958145824_blur.webp",
+    "author": "11",
+    "model": "newbie",
+    "params": {},
+    "nsfw": true,
+    "created_at": "2026-06-19T13:38:42.634Z"
+  },
+  {
+    "id": 1781876300847,
+    "image_url": "/images/1781876300847_0F085C03FDB14A12B228499D9BDA6603.webp",
+    "blur_image_url": "/images/1781876300847_0F085C03FDB14A12B228499D9BDA6603_blur.webp",
+    "author": "a",
+    "model": "newbie",
+    "params": {},
+    "nsfw": true,
+    "created_at": "2026-06-19T13:38:24.086Z"
   }
 ]
