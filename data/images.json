@@ -1,8 +1,56 @@
 [
   {
-    "id": 1781859656074,
-    "image_url": "/images/1781859656074_{artist_blue gk},Artist_ NIXEU,[Artist_qiandaiyiyu]，{Artist_ MICAV1},[[hyuk_(yea s-984440187 (1).webp",
-    "blur_image_url": "/images/1781859656074_{artist_blue gk},Artist_ NIXEU,[Artist_qiandaiyiyu]，{Artist_ MICAV1},[[hyuk_(yea s-984440187 (1)_blur.webp",
+    "id": 1781867014556,
+    "image_url": "/images/1781867014556_image_10.webp",
+    "blur_image_url": "/images/1781867014556_image_10_blur.webp",
+    "author": "aa",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-19T11:03:36.540Z"
+  },
+  {
+    "id": 1781866986882,
+    "image_url": "/images/1781866986882_ComfyUI_00027.webp",
+    "blur_image_url": "/images/1781866986882_ComfyUI_00027_blur.webp",
+    "author": "aa",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-19T11:03:07.780Z"
+  },
+  {
+    "id": 1781866970824,
+    "image_url": "/images/1781866970824_ComfyUI_00090.webp",
+    "blur_image_url": "/images/1781866970824_ComfyUI_00090_blur.webp",
+    "author": "aa2l",
+    "model": "anima",
+    "params": {
+      "model_name": "Anima base V10.safetensors",
+      "style_prompt": "@ixy,",
+      "quality_prompt": "year 2025, masterpiece, best quality, score_8, score_7,absurdres,",
+      "nl": "",
+      "positive_prompt": "",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,(sleeves:2),",
+      "loras": [
+        ""
+      ],
+      "resolution": "1024×1536",
+      "steps": 38,
+      "cfg": 5,
+      "denoise": 1,
+      "sampler": "euler_an",
+      "schedule": "simple",
+      "seed": "",
+      "workflow_json": ""
+    },
+    "nsfw": true,
+    "created_at": "2026-06-19T11:02:51.764Z"
+  },
+  {
+    "id": 1781866934171,
+    "image_url": "/images/1781866934171_摩西以斯拉.webp",
+    "blur_image_url": "/images/1781866934171_摩西以斯拉_blur.webp",
     "author": "a",
     "model": "nai",
     "params": {
@@ -22,7 +70,7 @@
       "characters": [
         {
           "name": "Character 1",
-          "prompt": "111",
+          "prompt": "",
           "undesired_content": ""
         },
         {
@@ -43,6 +91,52 @@
       ]
     },
     "nsfw": true,
-    "created_at": "2026-06-19T09:00:59.183Z"
+    "created_at": "2026-06-19T11:02:17.459Z"
+  },
+  {
+    "id": 1781866888040,
+    "image_url": "/images/1781866888040_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-880170561.webp",
+    "blur_image_url": "/images/1781866888040_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-880170561_blur.webp",
+    "author": "a",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "::0.8::artist:patzzi::,0.6::su_reut,::0.6::artist:na_tarapisu153,::",
+      "quality_prompt": "very aesthetic, masterpiece,",
+      "nl": "",
+      "base_prompt": "",
+      "undesired_content": "lowres,bad anatomy,bad hands,text,error,missing fingers,extra digit,fewer digits,cropped,worst quality,low quality,signature,watermark,username,artist ,name,2::Weapon,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 5.5,
+      "variety": "on",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": true,
+    "created_at": "2026-06-19T11:01:31.021Z"
   }
 ]
