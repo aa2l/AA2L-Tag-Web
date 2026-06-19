@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import { ImageRecord } from '../types';
 import { Lock } from 'lucide-react';
 
+// ===== 获取 basePath（与 next.config.ts 保持一致） =====
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/AA2L-Tag-Web' : '';
+
 interface ImageCardProps {
   img: ImageRecord;
   isUnlocked: boolean;
@@ -20,8 +23,9 @@ export default function ImageCard({ img, isUnlocked, onClick, delay = 0 }: Image
     return () => clearTimeout(timer);
   }, [delay]);
 
-  // ========== 核心：根据解锁状态决定用哪张图 ==========
-  const imageSrc = isNsfw ? img.blur_image_url : img.image_url;
+  // ===== 核心：图片 URL 加上 basePath 前缀 =====
+  const rawSrc = isNsfw ? img.blur_image_url : img.image_url;
+  const imageSrc = BASE_PATH + rawSrc;  // 如 /AA2L-Tag-Web/images/xxx.webp
 
   return (
     <div

@@ -5,6 +5,9 @@ import { MODEL_LABELS } from '../constants';
 import ParamRenderer from './ParamRenderers';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
+// ===== 获取 basePath =====
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/AA2L-Tag-Web' : '';
+
 interface ImageModalProps {
   selectedImage: ImageRecord | null;
   isUnlocked: boolean;
@@ -29,8 +32,9 @@ export default function ImageModal({
   const img = selectedImage;
   const isNsfw = img.nsfw && !isUnlocked;
 
-  // ========== 核心：根据解锁状态决定用哪张图 ==========
-  const imageSrc = isNsfw ? img.blur_image_url : img.image_url;
+  // ===== 核心：图片 URL 加上 basePath 前缀 =====
+  const rawSrc = isNsfw ? img.blur_image_url : img.image_url;
+  const imageSrc = BASE_PATH + rawSrc;
   const modalImageClass = isNsfw ? 'blur-2xl' : '';
 
   const handleContentClick = (e: React.MouseEvent) => {
