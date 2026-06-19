@@ -1,26 +1,189 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ---------- 二次元风配色：薄荷 + 樱花粉 ---------- */
+@theme {
+  --color-primary: #34D399;
+  --color-primary-dark: #2BBF8A;
+  --color-primary-light: #DCFCE7;
+  --color-primary-50: #ECFDF5;
+  --color-primary-100: #DCFCE7;
+  --color-primary-200: #BBF7D0;
+  --color-primary-300: #86EFAC;
+  --color-primary-400: #4ADE80;
+  --color-primary-500: #22C55E;
+  --color-primary-600: #16A34A;
+  --color-primary-700: #15803D;
+  --color-primary-800: #166534;
+  --color-primary-900: #14532D;
+
+  --color-pink: #F472B6;
+  --color-pink-dark: #EC4899;
+  --color-pink-light: #FCE4EC;
+  --color-pink-50: #FDF2F8;
+  --color-pink-100: #FCE4EC;
+  --color-pink-200: #F9A8D4;
+  --color-pink-300: #F472B6;
+  --color-pink-400: #EC4899;
+  --color-pink-500: #DB2777;
+
+  --color-background: #FDF8FA;
+  --color-card: #FFFFFF;
+  --color-card-soft: #FFFFFF;
+  --color-foreground: #374151;
+  --color-secondary: #8B7A8E;
+  --color-border: #FCE4EC;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ---------- 暗色模式 ---------- */
+[data-theme="dark"] {
+  --color-background: #1A1425;
+  --color-card: #2D1F33;
+  --color-card-soft: #2D1F33;
+  --color-foreground: #F5EEF8;
+  --color-secondary: #B8A8C4;
+  --color-border: rgba(244, 114, 182, 0.25);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ---------- 强制滚动条常驻 ---------- */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  overflow-y: scroll;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- 全局基础样式 ---------- */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- 画廊背景 ---------- */
+.bg-soft-noise {
+  background: var(--color-background);
+}
+
+/* ---------- 卡片背景 ---------- */
+.bg-card-soft {
+  background: var(--color-card-soft);
+}
+
+/* ---------- 毛玻璃工具栏 ---------- */
+.toolbar-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+[data-theme="dark"] .toolbar-glass {
+  background: rgba(26, 20, 37, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- 题头 ---------- */
+.header-gradient {
+  background: #FCE4EC;
+  transition: background 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  padding: 32px 24px;
+  text-align: center;
+}
+.header-gradient:hover {
+  background: #F9A8D4;
+}
+[data-theme="dark"] .header-gradient {
+  background: #2D1F33;
+}
+[data-theme="dark"] .header-gradient:hover {
+  background: #3D2F43;
+}
+
+/* 题头小字（点击切换主题提示） */
+.header-sub {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--color-secondary);
+  margin-top: 2px;
+}
+.header-gradient:hover .header-sub {
+  opacity: 1;
+}
+
+/* 题头装饰小星星 */
+.header-gradient::before {
+  content: "✦ ✦ ✦";
+  position: absolute;
+  bottom: 6px;
+  right: 20px;
+  font-size: 14px;
+  letter-spacing: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+  pointer-events: none;
+}
+[data-theme="dark"] .header-gradient::before {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* ---------- 弹窗柔光背景 ---------- */
+.modal-backdrop {
+  background: rgba(26, 20, 37, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+[data-theme="dark"] .modal-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- 自定义动画 ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+.animate-scaleIn {
+  animation: scaleIn 0.25s ease-out forwards;
+}
+
+/* ---------- 自定义滚动条（粉色） ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(116, 49, 84, 0.35);
+  border-radius: 9999px;
+  transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(93, 40, 67, 0.55);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 57, 90, 0.35) transparent;
 }
