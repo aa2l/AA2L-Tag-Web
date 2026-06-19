@@ -9,6 +9,7 @@ const MAX_FILE_SIZE = 20 * 1024 * 1024; // 20MB
 const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml'];
 export const dynamic = 'force-static';
 export const revalidate = false;
+
 // WebP 压缩质量（统一 88，兼顾画质与体积）
 const WEBP_QUALITY = 88;
 
@@ -18,6 +19,14 @@ const BLUR_CONFIG = {
   quality: 20,       // 极低质量
   blurSigma: 15,     // 高斯模糊强度
 };
+
+// ========== 新增：文件名清理函数 ==========
+function sanitizeFileName(name: string): string {
+  return name
+    .replace(/[^a-zA-Z0-9\u4e00-\u9fa5_.-]/g, '_')  // 特殊字符替换为下划线
+    .replace(/_+/g, '_')                              // 连续下划线合并
+    .replace(/^_+|_+$/g, '');                         // 移除首尾下划线
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -57,7 +66,11 @@ export async function POST(request: NextRequest) {
     // ========== 读取原始文件 ==========
     const fileBuffer = Buffer.from(await file.arrayBuffer());
     const timestamp = Date.now();
-    const baseName = path.basename(file.name, path.extname(file.name));
+    
+    // ========== 修改：清理原始文件名 ==========
+    const rawBaseName = path.basename(file.name, path.extname(file.name));
+    const cleanBaseName = sanitizeFileName(rawBaseName);  // ← 新增清理
+    
     const imagesDir = path.join(process.cwd(), 'public/images');
     await fs.ensureDir(imagesDir);
 
@@ -72,7 +85,8 @@ export async function POST(request: NextRequest) {
       .toColorspace('srgb')
       .toBuffer();
 
-    const mainFileName = `${timestamp}_${baseName}.webp`;
+    // 使用清理后的文件名
+    const mainFileName = `${timestamp}_${cleanBaseName}.webp`;
     const mainFilePath = path.join(imagesDir, mainFileName);
     await fs.writeFile(mainFilePath, mainBuffer);
 
@@ -89,7 +103,8 @@ export async function POST(request: NextRequest) {
       .toColorspace('srgb')
       .toBuffer();
 
-    const blurFileName = `${timestamp}_${baseName}_blur.webp`;
+    // 使用清理后的文件名
+    const blurFileName = `${timestamp}_${cleanBaseName}_blur.webp`;
     const blurFilePath = path.join(imagesDir, blurFileName);
     await fs.writeFile(blurFilePath, blurBuffer);
 
@@ -111,7 +126,7 @@ export async function POST(request: NextRequest) {
     const newRecord = {
       id: timestamp,
       image_url: `/images/${mainFileName}`,
-      blur_image_url: `/images/${blurFileName}`,   // ← 模糊图路径
+      blur_image_url: `/images/${blurFileName}`,
       author: author.trim(),
       model: model,
       params: params,
