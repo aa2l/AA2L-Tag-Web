@@ -45,7 +45,6 @@
 }
 
 /* ---------- 强制滚动条常驻 ---------- */
-
 body {
   overflow-y: scroll;
   min-height: 100vh;
@@ -186,4 +185,86 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(120, 57, 90, 0.35) transparent;
+}
+
+/* ============================================================
+   覆盖 Tailwind 颜色类，确保所有浏览器颜色一致
+   解决不同浏览器对 oklch / color-mix 渲染差异的问题
+   ============================================================ */
+
+/* ---------- 强制边框颜色一致 ---------- */
+.border-pink-100 {
+  border-color: #FCE4EC !important;
+}
+.dark .border-pink-900\/30 {
+  border-color: rgba(244, 114, 182, 0.25) !important;
+}
+
+/* ---------- 强制 Ring 描边颜色一致 ---------- */
+.ring-pink-100 {
+  --tw-ring-color: #FCE4EC !important;
+}
+.dark .ring-pink-900\/30 {
+  --tw-ring-color: rgba(244, 114, 182, 0.25) !important;
+}
+
+/* ---------- 强制参数背景颜色一致 ---------- */
+.bg-pink-50\/30 {
+  background-color: rgba(253, 242, 248, 0.3) !important;
+}
+.dark .bg-pink-900\/25 {
+  background-color: rgba(244, 114, 182, 0.25) !important;
+}
+
+/* ---------- 覆盖 hover 状态 ---------- */
+.hover\:bg-pink-50:hover {
+  background-color: #FDF2F8 !important;
+}
+.dark .hover\:bg-pink-900\/10:hover {
+  background-color: rgba(244, 114, 182, 0.1) !important;
+}
+
+/* ---------- 覆盖其他关键粉色系 ---------- */
+.bg-pink-100 {
+  background-color: #FCE4EC !important;
+}
+.dark .bg-pink-900\/20 {
+  background-color: rgba(244, 114, 182, 0.2) !important;
+}
+
+.bg-pink-50 {
+  background-color: #FDF2F8 !important;
+}
+
+.text-pink-500 {
+  color: #DB2777 !important;
+}
+.dark .text-pink-300 {
+  color: #F472B6 !important;
+}
+
+.text-pink-600 {
+  color: #EC4899 !important;
+}
+.dark .text-pink-400 {
+  color: #EC4899 !important;
+}
+
+.text-pink-200 {
+  color: #F9A8D4 !important;
+}
+
+/* ---------- 覆盖毛玻璃背景 ---------- */
+[data-theme="dark"] .toolbar-glass {
+  background: rgba(26, 20, 37, 0.75) !important;
+}
+
+/* ---------- 覆盖卡片背景 ---------- */
+.bg-card-soft {
+  background: var(--color-card-soft) !important;
+}
+
+/* ---------- 覆盖边框 ---------- */
+.border-border {
+  border-color: var(--color-border) !important;
 }
