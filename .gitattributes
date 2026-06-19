@@ -1,1 +1,5 @@
+# 追踪所有图片文件（WebP）
 public/images/**/*.webp filter=lfs diff=lfs merge=lfs -text
+
+# 如果以后有漫画图片，也加上
+public/comics/**/*.webp filter=lfs diff=lfs merge=lfs -text
