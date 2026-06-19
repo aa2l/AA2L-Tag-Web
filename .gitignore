@@ -47,3 +47,5 @@ app/api/images/batch-delete/route.ts
 app/api/images/route.ts
 app/api/upload/route.ts
 /app/api
+app/api/images/\[id\]/route.ts
+/app/api
