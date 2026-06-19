@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 仅本地使用的 API 路由（静态导出时不需要）
+app/api/
