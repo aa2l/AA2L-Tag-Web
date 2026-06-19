@@ -3,15 +3,16 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs-extra';
 import path from 'path';
 
-// 静态导出必需的配置
+// ========== 静态导出必需的配置 ==========
 export const dynamic = 'force-static';
 export const revalidate = false;
 
-// 关键：添加 generateStaticParams 并返回空数组
+// ========== 必须添加：生成静态参数（返回空数组） ==========
 export function generateStaticParams() {
   return [];
 }
-// PUT 
+
+// ========== PUT 更新 ==========
 export async function PUT(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -37,7 +38,6 @@ export async function PUT(
       return NextResponse.json({ error: '图片不存在' }, { status: 404 });
     }
 
-    //  更新记录
     const updated = {
       ...data[index],
       author,
@@ -55,7 +55,7 @@ export async function PUT(
   }
 }
 
-// DELETE 删除
+// ========== DELETE 删除 ==========
 export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -79,6 +79,14 @@ export async function DELETE(
     const imagePath = path.join(process.cwd(), 'public', imageUrl);
     if (await fs.pathExists(imagePath)) {
       await fs.remove(imagePath);
+    }
+
+    // 如果有模糊图，也一并删除
+    if (data[index].blur_image_url) {
+      const blurPath = path.join(process.cwd(), 'public', data[index].blur_image_url);
+      if (await fs.pathExists(blurPath)) {
+        await fs.remove(blurPath);
+      }
     }
 
     data.splice(index, 1);
