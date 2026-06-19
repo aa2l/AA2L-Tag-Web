@@ -1,8 +1,16 @@
+// app/api/images/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs-extra';
 import path from 'path';
+
+// 静态导出必需的配置
 export const dynamic = 'force-static';
 export const revalidate = false;
+
+// 关键：添加 generateStaticParams 并返回空数组
+export function generateStaticParams() {
+  return [];
+}
 // PUT 
 export async function PUT(
   request: NextRequest,
