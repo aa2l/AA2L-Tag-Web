@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs-extra';
 import path from 'path';
-
+export const dynamic = 'force-static';
+export const revalidate = false;
 // PUT 
 export async function PUT(
   request: NextRequest,

@@ -7,7 +7,8 @@ import sharp from 'sharp';
 // ========== 配置 ==========
 const MAX_FILE_SIZE = 20 * 1024 * 1024; // 20MB
 const ALLOWED_MIME_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml'];
-
+export const dynamic = 'force-static';
+export const revalidate = false;
 // WebP 压缩质量（统一 88，兼顾画质与体积）
 const WEBP_QUALITY = 88;
 
