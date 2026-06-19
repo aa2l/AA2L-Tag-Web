@@ -42,3 +42,8 @@ next-env.d.ts
 
 # 仅本地使用的 API 路由（静态导出时不需要）
 app/api/
+app/api/images/\[id\]/route.ts
+app/api/images/batch-delete/route.ts
+app/api/images/route.ts
+app/api/upload/route.ts
+/app/api
