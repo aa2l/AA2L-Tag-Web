@@ -1,5 +1,33 @@
 [
   {
+    "id": 1782038605966,
+    "image_url": "/images/1782038605966_image_14.webp",
+    "blur_image_url": "/images/1782038605966_image_14_blur.webp",
+    "author": "aa2l",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v140.safetensors",
+      "style_prompt": "impasto,(nat the lich:0.9),(dsmile:0.7),(reoen0.4),(weri:0.4),girl,",
+      "quality_prompt": "newest,very awa,masterpiece,best quality,very aesthetic,highres,absurdres,perfect scenery,",
+      "positive_prompt": "full_shot,impasto,(nat the lich:0.9),(dsmile:0.7),(reoen0.4),(weri:0.4),girl,solo,shirt,(ishmael\\(Project Moon\\):1.1),white shirt,long sleeves,jk,expressionless,hair_tucking,freckles,soft_nai,soft,scenery,newest,very awa,masterpiece,best quality,very aesthetic,highres,absurdres,perfect scenery,vista-tan,wind,scenery,(bird:1.2),cityscape,dusk,from_above,depth of field,blurry foreground,sunshine,looking_at_viewer,(cloud:0.7),black necktie,flying tie,",
+      "negative_prompt": "worst aesthetic,ai-generated,worst quality,low quality,lowres,scan artifacts,signature,username,artist name,english commentary,logo,watermark,web address,dated,bad hands,extra digits,fewer digits,mutated hands,anthro,ambiguous_form,feral,semi-anthro,official art,light particles,(bad),text,error,fewer,extra,missing,worst quality,jpeg artifacts,low quality,watermark,unfinished,displeasing,oldest,early,extra digits,artistic error,username,scan,",
+      "loras": [
+        ""
+      ],
+      "resolution": "1616x1064",
+      "steps": 50,
+      "cfg_scale": 5.5,
+      "denoise": 0.5,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "2840764529",
+      "extra_params": "ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer model 2nd: hand_yolov8n.pt, ADetailer confidence 2nd: 0.2, ADetailer dilate erode 2nd: 4, ADetailer mask blur 2nd: 4, ADetailer denoising strength 2nd: 0.4, ADetailer inpaint only masked 2nd: True, ADetailer inpaint padding 2nd: 32, ADetailer version: 25.3.0, kohya_hrfix_enabled: True, kohya_hrfix_block_number: 3, kohya_hrfix_downscale_factor: 2, kohya_hrfix_start_percent: 0, kohya_hrfix_end_percent: 0.35, kohya_hrfix_downscale_after_skip: True, kohya_hrfix_downscale_method: bicubic, kohya_hrfix_upscale_method: bicubic, latent_modifier_enabled: True, latent_modifier_sharpness_multiplier: 0, latent_modifier_sharpness_method: anisotropic, latent_modifier_tonemap_multiplier: 0, latent_modifier_tonemap_method: reinhard, latent_modifier_tonemap_percentile: 100, latent_modifier_contrast_multiplier: 0, latent_modifier_combat_method: subtract, latent_modifier_combat_cfg_drift: 0, latent_modifier_rescale_cfg_phi: 0, latent_modifier_extra_noise_type: gaussian, latent_modifier_extra_noise_method: add, latent_modifier_extra_noise_multiplier: 0, latent_modifier_extra_noise_lowpass: 100, latent_modifier_divisive_norm_size: 127, latent_modifier_divisive_norm_multiplier: 0, latent_modifier_spectral_mod_mode: hard_clamp, latent_modifier_spectral_mod_percentile: 5, latent_modifier_spectral_mod_multiplier: 0, latent_modifier_affect_uncond: None, latent_modifier_dyn_cfg_augmentation: None,",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T10:43:26.808Z"
+  },
+  {
     "id": 1782038183852,
     "image_url": "/images/1782038183852_araya5.webp",
     "blur_image_url": "/images/1782038183852_araya5_blur.webp",
@@ -49,7 +77,7 @@
     "id": 1782038002078,
     "image_url": "/images/1782038002078_AD25BD1E89A32DA583F0705FCFC0C851.webp",
     "blur_image_url": "/images/1782038002078_AD25BD1E89A32DA583F0705FCFC0C851_blur.webp",
-    "author": "花霖Firefly",
+    "author": "花霖",
     "model": "nai",
     "params": {
       "model_name": "Noval AI v4.5",
@@ -151,7 +179,7 @@
     "id": 1782028291927,
     "image_url": "/images/1782028291927_5479067957C22F44B2106F63D02ABAE5.webp",
     "blur_image_url": "/images/1782028291927_5479067957C22F44B2106F63D02ABAE5_blur.webp",
-    "author": "花霖Firefly",
+    "author": "花霖",
     "model": "nai",
     "params": {
       "model_name": "Noval AI v4.5",
