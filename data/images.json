@@ -1,5 +1,62 @@
 [
   {
+    "id": 1782061868295,
+    "image_url": "/images/1782061868295_00011-1558003888.webp",
+    "blur_image_url": "/images/1782061868295_00011-1558003888_blur.webp",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "waiIllustriousSDXL_v160",
+      "style_prompt": "artist:shion(mirudakemann),artist:nanmokaken,artist:akakura,quasarcake,<lora:baifuzhang:0.5>,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdresnewest,",
+      "positive_prompt": "1man,solo,LaManchaDonQuixote,long hair,light grey hair,red eyes,cowboy shot,standing,white shirt,farmer hat,white shirt,pants,standing,laughing,happy,open mouth,fang out,farm,field,wheat field,standing,looking at viewer,adjusting hat,sidelighting,windblow,flaoting hair,holding wheat\nmasterpiece,best quality,very aesthetic,absurdresnewest,safe,artist:shion(mirudakemann),artist:nanmokaken,artist:akakura,quasarcake,<lora:baifuzhang:0.5>,<lora:LaManchaland_Don_Quixote_Limbus_Illustrious:1>",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi)),window,necklace",
+      "loras": [
+        "<lora:baifuzhang:0.5>",
+        "<lora:LaManchaland_Don_Quixote_Limbus_Illustrious:1>"
+      ],
+      "resolution": "3072x1728",
+      "steps": 28,
+      "cfg_scale": 5.5,
+      "denoise": 0.25,
+      "sampler": "Euler a",
+      "schedule": "Automatic(karras)",
+      "seed": "1558003888",
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T17:11:10.466Z"
+  },
+  {
+    "id": 1782061455552,
+    "image_url": "/images/1782061455552_00000-185766121.webp",
+    "blur_image_url": "/images/1782061455552_00000-185766121_blur.webp",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "chenkinNoobXL_v01",
+      "style_prompt": "(artist:mikozin:0.7), reoen, (sumiyao (amam):0.8), (momiji mao:0.6), (suisai (suisao):0.5),kromer \\(project moon\\),",
+      "quality_prompt": "Masterpiece, best quality, very aesthetic, absurdres, newest,",
+      "positive_prompt": "2girls,Masterpiece, best quality, very aesthetic, absurdres, newest, safe, (artist:mikozin:0.7), reoen, (sumiyao (amam):0.8), (momiji mao:0.6), (suisai (suisao):0.5),kromer \\(project moon\\), silver short hair,yellow colored tips,cow print bikini, cow horns, cowbell, elbow gloves, thighhighs, cow print, large breasts,from side,french kiss,bedroom,pussy juice,blush,sweat,on bed,eyes closed,night,hug,\nBREAK2girls,Masterpiece, best quality, very aesthetic, absurdres, newest, safe, (artist:mikozin:0.7), reoen, (sumiyao (amam):0.8), (momiji mao:0.6), (suisai (suisao):0.5),2girls,sinclair \\(project moon\\), blonde short hair,yellow eyes,maid clothes,futanari,from side,french kiss,bedroom,skirt lift,penis,blush,steaming body,heavy breathing,eyes closed,cum,on bed,trembling, twitching penis, night,flat chest,uncensored, hug,\n",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi)),window,necklace,censored\n",
+      "loras": [
+        ""
+      ],
+      "resolution": "1920x2752",
+      "steps": 28,
+      "cfg_scale": 5,
+      "denoise": 0.3,
+      "sampler": "Euler a",
+      "schedule": "Automatic（Karras）",
+      "seed": "185766121",
+      "extra_params": "forge_couple: True, forge_couple_compatibility: True, forge_couple_mode: Advanced, forge_couple_separator: BREAK, forge_couple_mapping: \"[[0, 0.5, 0, 1, 1], [0.5, 1, 0, 1, 1]]\", forge_couple_common_parser: { }, forge_couple_def_in_prompt: True, Emphasis: Original,",
+      "workflow_json": ""
+    },
+    "nsfw": true,
+    "created_at": "2026-06-21T17:04:17.302Z"
+  },
+  {
     "id": 1782038605966,
     "image_url": "/images/1782038605966_image_14.webp",
     "blur_image_url": "/images/1782038605966_image_14_blur.webp",
