@@ -1,134 +1,327 @@
 [
   {
-    "id": 1781876430138,
-    "image_url": "/images/1781876430138_ComfyUI_00027.webp",
-    "blur_image_url": "/images/1781876430138_ComfyUI_00027_blur.webp",
-    "author": "a",
+    "id": 1782038183852,
+    "image_url": "/images/1782038183852_araya5.webp",
+    "blur_image_url": "/images/1782038183852_araya5_blur.webp",
+    "author": "星野風禾",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.2::artist:onyhakase ::, 1.2::artist:reia_76 ::, 1.1::ke-ta ::, 0.5::artist:potg_(piotegu)::, 0.8::artist:ogipote ::, ",
+      "quality_prompt": "best quality, very aesthetic, absurdres, high detail,",
+      "nl": "",
+      "base_prompt": "white curtains, \n1girl, loli, aged down, black eyes, streaked hair, lap pillow, from below, face focus, pov, looking down, looking at viewer, gentle smile, purple kimono, \n1.2::artist:onyhakase ::, 1.2::artist:reia_76 ::, 1.1::ke-ta ::, 0.5::artist:potg_(piotegu)::, 0.8::artist:ogipote ::, \nmasterpiece, glossy surfaces, flat color, sketch, best quality, very aesthetic, absurdres, high detail, detailed eyes,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, multiple views, too many watermarks, {{watermarks}}, signature,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "1442530",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T10:36:27.124Z"
+  },
+  {
+    "id": 1782038002078,
+    "image_url": "/images/1782038002078_AD25BD1E89A32DA583F0705FCFC0C851.webp",
+    "blur_image_url": "/images/1782038002078_AD25BD1E89A32DA583F0705FCFC0C851_blur.webp",
+    "author": "花霖Firefly",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "-2::artist collaboration::,0.6::artist:wawamachi::,0.6::artist:shion_(mirudakemann)::,1.2::artist:quasarcake::, 0.8::artist:akakura::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "-2::artist collaboration::,0.6::artist:wawamachi::,0.6::artist:shion_(mirudakemann)::,1.2::artist:quasarcake::, 0.8::artist:akakura::,\n1girl,sancho (project moon), alternate costume,\nsancho_panza_(fate)(cosplay),fate/grand_order,maid headdress,white dress,glasses,\nfemale focus, blurry background,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "3485662506",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T10:33:25.297Z"
+  },
+  {
+    "id": 1782037406285,
+    "image_url": "/images/1782037406285_00000-3747474174.webp",
+    "blur_image_url": "/images/1782037406285_00000-3747474174_blur.webp",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "测试喵",
+      "style_prompt": "artist:shion(mirudakemann),artist:nanmokaken,artist:akakura,quasarcake,<lora:nai_ga-ill-fandingo:0.7>",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdresnewest,",
+      "positive_prompt": "parameters1girl,solo,rodion \\(project moon\\),brown long hair,dark blue eyes,huge breasts,white dress,long sleeves,bowtie,alps,mountainous horizon,grasslands,river,forest,blue sky,clear sky,sunshine,windblow,wind,light,shadow,best illumination,spring,green grass\nmasterpiece,best quality,very aesthetic,absurdresnewest,safe,artist:shion(mirudakemann),artist:nanmokaken,artist:akakura,quasarcake,<lora:nai_ga-ill-fandingo:0.7>\n",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi)),\n",
+      "loras": [
+        "<lora:nai_ga-ill-fandingo>"
+      ],
+      "resolution": "1920x3072",
+      "steps": 28,
+      "cfg_scale": 5,
+      "denoise": 0.3,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "3747474174",
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T10:23:29.190Z"
+  },
+  {
+    "id": 1782028812489,
+    "image_url": "/images/1782028812489_image_3.webp",
+    "blur_image_url": "/images/1782028812489_image_3_blur.webp",
+    "author": "aa2l",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v140",
+      "style_prompt": "<lora:lifelineXL_NBVP1_lokr_V6311PZ:0.95>,",
+      "quality_prompt": "",
+      "positive_prompt": "solo,1girl,texas \\(arknights\\),long hair,looking_back,looking_away,looking_afar,ruins,outdoors,bird,building,wide shot,<lora:lifelineXL_NBVP1_lokr_V6311PZ:0.95>,depth of field,chromatic_aberration,",
+      "negative_prompt": "nsfw,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,mammal,anthro,furry,ambiguous form,feral,semi-anthro,",
+      "loras": [
+        "<lora:lifelineXL_NBVP1_lokr_V6311PZ:0.95>"
+      ],
+      "resolution": "2096x1520",
+      "steps": 40,
+      "cfg_scale": 5,
+      "denoise": 0.4,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "681815bb31",
+      "extra_params": " ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer version: 25.3.0,kohya_hrfix_downscale_factor: 2, kohya_hrfix_start_percent: 0, kohya_hrfix_end_percent: 0.35, kohya_hrfix_downscale_after_skip: True, kohya_hrfix_downscale_method: bicubic, kohya_hrfix_upscale_method: bicubic,",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T08:00:13.718Z"
+  },
+  {
+    "id": 1782028291927,
+    "image_url": "/images/1782028291927_5479067957C22F44B2106F63D02ABAE5.webp",
+    "blur_image_url": "/images/1782028291927_5479067957C22F44B2106F63D02ABAE5_blur.webp",
+    "author": "花霖Firefly",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "0.8::artist:quasarcake::,0.7::artist:shanyao_jiang_tororo::,1.4::artist:mika_pikazo::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "0.8::artist:quasarcake::,0.7::artist:shanyao_jiang_tororo::,1.4::artist:mika_pikazo::,\n1boy,heathcliff_(project_moon),alternate costume,2::alternate weapon::,silver_visor_(armor),\nrathalos_(armor),monster_hunter_(character)(cosplay),monster_hunter_(series),holding sword,armored,holding sword,great sword,large weapon,helmet,covered eyes,shoulder armor,\nmale focus,blurry background,close-up, dynamic pose,speed lines,motion lines,fighting,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "2111248",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T07:51:34.798Z"
+  },
+  {
+    "id": 1782027810366,
+    "image_url": "/images/1782027810366_image_10.webp",
+    "blur_image_url": "/images/1782027810366_image_10_blur.webp",
+    "author": "aa2l",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v120",
+      "style_prompt": "impasto,(nat the lich:0.9),(dsmile:0.7),(reoen0.4),(weri:0.4),",
+      "quality_prompt": "masterpiece,best quality,amazing quality,very aesthetic,absurdres,very awa,year 2024,masterpiece,best quality,very aesthetic,newest,absurdres,i",
+      "positive_prompt": "masterpiece,best quality,amazing quality,very aesthetic,absurdres,2girls,expressionless,jitome,leaning_forward,hands_on_another's_hips,embrace each other,symmetrical_docking,upper_body,from_above,looking_at_viewer,\nADDCOMM,rio \\(blue archive\\),halo,large breasts,red eyes,bright pupils,white pupils,ringed eyes,black hair,blunt bangs,sidelocks,very long hair,hairclip,black jacket,id card,turtleneck,ribbed sweater,white sweater,black skirt,pleated skirt,black pantyhose,thigh holster,<lora:add-detail-xl>,\nADDCOL,<lora:chisa-wwIL-va:1.1>,(chisa:1.1),red eyes,black hair,hair ribbon,mole under eye,choker,arm tattoo,finger ring,thigh strap,dark blue clothes,very awa,year 2024,masterpiece,best quality,very aesthetic,newest,absurdres,impasto,(nat the lich:0.9),(dsmile:0.7),(reoen0.4),(weri:0.4),\n",
+      "negative_prompt": "worst aesthetic,ai-generated,worst quality,low quality,lowres,scan artifacts,logo,web address,dated,extra digits,fewer digits,mutated hands,anthro,ambiguous_form,feral,semi-anthro,old,light particles,worst quality,low quality,bad quality,=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,sketch,watermark,sketch,\n",
+      "loras": [
+        "<lora:add-detail-xl>,",
+        "<lora:chisa-wwIL-va:1.1>,"
+      ],
+      "resolution": "1872x2736",
+      "steps": 45,
+      "cfg_scale": 5.5,
+      "denoise": 0.3,
+      "sampler": " DPM++ 2M SDE",
+      "schedule": "Karras",
+      "seed": "3170801754",
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T07:43:32.277Z"
+  },
+  {
+    "id": 1782027505978,
+    "image_url": "/images/1782027505978_浮220.webp",
+    "blur_image_url": "/images/1782027505978_浮220_blur.webp",
+    "author": "星野風禾",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "artist:komota_(kanyou_shoujo), [aku0], yanyan_(shinken_gomi), ",
+      "quality_prompt": "year 2024, masterpiece, best quality, very aesthetic, absurdres, masterpiece, best quality,",
+      "nl": "",
+      "base_prompt": "artist:komota_(kanyou_shoujo), [aku0], yanyan_(shinken_gomi), year 2024, \n1girl, faust (project moon), rabbit girl, rabbit ears, animal girl, long coat, sweater, lying, lying in gift box, on side, looking at viewer, gift box, sexy, folded, \ncover, comic cover, \nmasterpiece, best quality, very aesthetic, absurdres, masterpiece, best quality,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, logo, too many watermarks, {{watermarks}}, signature, dark-skinned, colored skin, chibi, multiple views,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 8,
+      "variety": "on",
+      "sampler": "Euler A",
+      "schedule": "karras",
+      "seed": "571356",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-06-21T07:38:29.188Z"
+  },
+  {
+    "id": 1782027136252,
+    "image_url": "/images/1782027136252_ComfyUI_00023.webp",
+    "blur_image_url": "/images/1782027136252_ComfyUI_00023_blur.webp",
+    "author": "aa2l",
     "model": "anima",
     "params": {
       "model_name": "Anima base V10.safetensors",
-      "style_prompt": "@ixy,",
-      "quality_prompt": "year 2025, masterpiece, best quality, score_8, score_7,absurdres,",
+      "style_prompt": "@z3zz4,",
+      "quality_prompt": "year 2025, masterpiece, best quality, score_8, score_7,highres, absurdres,",
       "nl": "",
-      "positive_prompt": "",
-      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,(sleeves:2),",
+      "positive_prompt": "year 2025, masterpiece, best quality, score_8, score_7,highres, absurdres, @z3zz4,(Faust\\(Project Moon\\):2),looking at viewer,upper_body,",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, (artist name:2),(@:2),",
       "loras": [
         ""
       ],
-      "resolution": "1024×1536",
+      "resolution": "1232×1840",
       "steps": 38,
       "cfg": 5,
       "denoise": 1,
-      "sampler": "euler_an",
+      "sampler": "dpmpp_2m_sde_gpu",
       "schedule": "simple",
-      "seed": "",
+      "seed": "536292782985912",
       "workflow_json": ""
     },
     "nsfw": false,
-    "created_at": "2026-06-19T13:40:31.052Z"
+    "created_at": "2026-06-21T07:32:17.155Z"
   },
   {
-    "id": 1781876395650,
-    "image_url": "/images/1781876395650_image_23.webp",
-    "blur_image_url": "/images/1781876395650_image_23_blur.webp",
-    "author": "1",
-    "model": "sd",
+    "id": 1782026942822,
+    "image_url": "/images/1782026942822_ComfyUI_00080.webp",
+    "blur_image_url": "/images/1782026942822_ComfyUI_00080_blur.webp",
+    "author": "aa2l",
+    "model": "anima",
     "params": {
-      "model_name": "waiNSFWIllustrious_v150.safetensors",
-      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
-      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
-      "positive_prompt": "",
-      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
+      "model_name": "Anima base V10.safetensors",
+      "style_prompt": "(@mikozin:1),",
+      "quality_prompt": "year 2025, masterpiece, best quality, score_8, score_7,highres,absurdres,",
+      "nl": "A nuke girl sits down for the camera, lifts and spreads her legs, stroking her vulva and snorting, her body trembling with pleasure,",
+      "positive_prompt": "year 2025, masterpiece, best quality, score_8, score_7,highres,absurdres,(faust\\\\(Project Moon\\\\):2.5),(@mikozin:1),nsfw,explicit,A nuke girl sits down for the camera, lifts and spreads her legs, stroking her vulva and snorting, her body trembling with pleasure,White hair, blue eyes,pussy,masturbation,in the bedroom,",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, (artist name:2),(@:2),text,",
       "loras": [
         ""
       ],
-      "resolution": "1616x1064",
-      "steps": 34,
-      "cfg_scale": 5.5,
+      "resolution": "1232×1840",
+      "steps": 38,
+      "cfg": 5.5,
       "denoise": 1,
-      "sampler": "Euler a",
-      "schedule": "Karras",
-      "seed": "",
-      "extra_params": "",
+      "sampler": "dpmpp_2m_sde_gpu",
+      "schedule": "simple",
+      "seed": "1079258413491910",
       "workflow_json": ""
     },
     "nsfw": true,
-    "created_at": "2026-06-19T13:39:56.620Z"
-  },
-  {
-    "id": 1781876367101,
-    "image_url": "/images/1781876367101_image_10.webp",
-    "blur_image_url": "/images/1781876367101_image_10_blur.webp",
-    "author": "1",
-    "model": "sd",
-    "params": {
-      "model_name": "waiNSFWIllustrious_v150.safetensors",
-      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
-      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
-      "positive_prompt": "",
-      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
-      "loras": [
-        ""
-      ],
-      "resolution": "1616x1064",
-      "steps": 34,
-      "cfg_scale": 5.5,
-      "denoise": 1,
-      "sampler": "Euler a",
-      "schedule": "Karras",
-      "seed": "",
-      "extra_params": "",
-      "workflow_json": ""
-    },
-    "nsfw": false,
-    "created_at": "2026-06-19T13:39:28.938Z"
-  },
-  {
-    "id": 1781876352576,
-    "image_url": "/images/1781876352576_image_13.webp",
-    "blur_image_url": "/images/1781876352576_image_13_blur.webp",
-    "author": "1",
-    "model": "sd",
-    "params": {
-      "model_name": "waiNSFWIllustrious_v150.safetensors",
-      "style_prompt": "(ratatatat74:0.5),(binggong asylum:0.3),",
-      "quality_prompt": "year 2025, masterpiece, best quality,absurdres,",
-      "positive_prompt": "",
-      "negative_prompt": "nsfw,text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,anthro,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,",
-      "loras": [
-        ""
-      ],
-      "resolution": "1616x1064",
-      "steps": 34,
-      "cfg_scale": 5.5,
-      "denoise": 1,
-      "sampler": "Euler a",
-      "schedule": "Karras",
-      "seed": "",
-      "extra_params": "",
-      "workflow_json": ""
-    },
-    "nsfw": true,
-    "created_at": "2026-06-19T13:39:14.052Z"
-  },
-  {
-    "id": 1781876319479,
-    "image_url": "/images/1781876319479_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-3958145824.webp",
-    "blur_image_url": "/images/1781876319479_artist_blue_gk_Artist_NIXEU_Artist_qiandaiyiyu_Artist_MICAV1_hyuk_yea_s-3958145824_blur.webp",
-    "author": "11",
-    "model": "newbie",
-    "params": {},
-    "nsfw": true,
-    "created_at": "2026-06-19T13:38:42.634Z"
-  },
-  {
-    "id": 1781876300847,
-    "image_url": "/images/1781876300847_0F085C03FDB14A12B228499D9BDA6603.webp",
-    "blur_image_url": "/images/1781876300847_0F085C03FDB14A12B228499D9BDA6603_blur.webp",
-    "author": "a",
-    "model": "newbie",
-    "params": {},
-    "nsfw": true,
-    "created_at": "2026-06-19T13:38:24.086Z"
+    "created_at": "2026-06-21T07:29:03.697Z"
   }
 ]

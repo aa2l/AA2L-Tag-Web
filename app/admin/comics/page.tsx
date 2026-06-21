@@ -3,8 +3,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { Plus, Pencil, Trash2, BookOpen, Upload, X } from 'lucide-react';
-import type { ComicSeries, ComicStatus,ReadingDirection } from '@/types/comic';
-import { COMIC_STATUS_LABELS, COMIC_STATUS_COLORS,READING_DIRECTION_OPTIONS, } from '@/types/comic';
+import type { ComicSeries, ComicStatus, ReadingDirection } from '@/types/comic';
+import { COMIC_STATUS_LABELS, COMIC_STATUS_COLORS, READING_DIRECTION_OPTIONS } from '@/types/comic';
 import ChapterManager from './components/ChapterManager';
 
 // ============================================================
@@ -55,7 +55,7 @@ function ComicList({
             <tr key={comic.id} className="border-b border-border dark:border-border">
               <td className="px-4 py-2">
                 <img
-                  src={comic.coverImage}
+                  src={comic.coverThumbUrl || comic.coverImage}
                   alt={comic.title}
                   className="w-12 h-16 object-cover rounded"
                 />
@@ -103,7 +103,7 @@ function ComicList({
 }
 
 // ============================================================
-// 子组件：漫画表单（含封面上传 + NSFW 复选框）
+// 子组件：漫画表单（含封面上传 + NSFW 复选框 + 阅读方向）
 // ============================================================
 function ComicForm({
   comic,
@@ -122,15 +122,15 @@ function ComicForm({
   const [author, setAuthor] = useState(comic?.author || '');
   const [description, setDescription] = useState(comic?.description || '');
   const [coverImage, setCoverImage] = useState(comic?.coverImage || '');
+  const [coverThumbUrl, setCoverThumbUrl] = useState(comic?.coverThumbUrl || '');
   const [status, setStatus] = useState<ComicStatus>(comic?.status || 'ongoing');
   const [readingDirection, setReadingDirection] = useState<ReadingDirection>(
     comic?.readingDirection || 'left-to-right'
   );
+
   // 封面上传状态
   const [coverPreview, setCoverPreview] = useState<string | null>(comic?.coverImage || null);
   const [uploadingCover, setUploadingCover] = useState(false);
-
-  // NSFW 状态
   const [coverNsfw, setCoverNsfw] = useState(comic?.coverNsfw || false);
 
   // ===== 提交 =====
@@ -141,6 +141,7 @@ function ComicForm({
       author,
       description,
       coverImage,
+      coverThumbUrl,
       coverNsfw,
       status,
       readingDirection,
@@ -167,6 +168,7 @@ function ComicForm({
       const result = await res.json();
       if (res.ok) {
         setCoverImage(result.url);
+        setCoverThumbUrl(result.thumbUrl || '');
       } else {
         alert('上传失败: ' + result.error);
         setCoverPreview(comic?.coverImage || null);
@@ -182,6 +184,7 @@ function ComicForm({
   // ===== 移除封面 =====
   const clearCover = () => {
     setCoverImage('');
+    setCoverThumbUrl('');
     setCoverPreview(null);
     const input = document.getElementById('coverFileInput') as HTMLInputElement;
     if (input) input.value = '';
@@ -291,6 +294,7 @@ function ComicForm({
         </div>
       </div>
 
+      {/* 状态 */}
       <div>
         <label className="block text-sm font-medium mb-1">状态</label>
         <select
@@ -302,22 +306,24 @@ function ComicForm({
           <option value="completed">已完结</option>
         </select>
       </div>
-      {/* ===== 新增：阅读方向 ===== */}
-<div>
-  <label className="block text-sm font-medium mb-1">阅读方向 *</label>
-  <select
-    value={readingDirection}
-    onChange={(e) => setReadingDirection(e.target.value as ReadingDirection)}
-    className="w-full border rounded p-2 dark:bg-card"
-  >
-    {READING_DIRECTION_OPTIONS.map((opt) => (
-      <option key={opt.value} value={opt.value}>
-        {opt.label}
-      </option>
-    ))}
-  </select>
-  <p className="text-xs text-secondary mt-1">用户阅读时将以此方向翻阅</p>
-</div>
+
+      {/* 阅读方向 */}
+      <div>
+        <label className="block text-sm font-medium mb-1">阅读方向 *</label>
+        <select
+          value={readingDirection}
+          onChange={(e) => setReadingDirection(e.target.value as ReadingDirection)}
+          className="w-full border rounded p-2 dark:bg-card"
+        >
+          {READING_DIRECTION_OPTIONS.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
+        </select>
+        <p className="text-xs text-secondary mt-1">用户阅读时将以此方向翻阅</p>
+      </div>
+
       <div className="flex items-center gap-3 pt-2 border-t">
         <button
           type="submit"
@@ -337,6 +343,7 @@ function ComicForm({
     </form>
   );
 }
+
 // ============================================================
 // 主页面
 // ============================================================
@@ -459,7 +466,10 @@ export default function ComicsAdminPage() {
             <Link href="/admin" className="text-secondary hover:text-foreground">
               ← 返回
             </Link>
-            <h1 className="text-2xl font-bold">📖 漫画管理</h1>
+            <h1 className="text-2xl font-bold flex items-center gap-2">
+              <BookOpen className="w-6 h-6 text-pink-500" />
+              漫画管理
+            </h1>
           </div>
           <div className="flex items-center gap-3">
             {selectedComic && showChapterManager && (

@@ -79,10 +79,10 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
           uploadedPages.push({
             url: uploadResult.url,
             blurUrl: uploadResult.blurUrl || '',
+            thumbUrl: uploadResult.thumbUrl || '',  // ← 新增：保存缩略图
             nsfw: uploadResult.nsfw,
           });
         } else {
-          // 如果某张图片上传失败，继续上传其他的
           console.warn('图片上传失败:', uploadResult.error);
         }
       }
@@ -126,7 +126,7 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
     }
   };
 
-  // ===== 选择图片（不立即上传，只保存到内存） =====
+  // ===== 选择图片 =====
   const handleSelectFiles = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files) return;
@@ -134,7 +134,6 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
     const newPages: { file: File; preview: string; nsfw: boolean }[] = [];
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
-      // 限制单张大小 10MB
       if (file.size > 10 * 1024 * 1024) {
         setMessage({ type: 'error', text: `${file.name} 超过 10MB 限制` });
         continue;
@@ -147,7 +146,6 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
     }
 
     setPendingPages([...pendingPages, ...newPages]);
-    // 重置文件输入，允许重复选择相同文件
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
@@ -156,7 +154,6 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
   // ===== 移除待上传的页面 =====
   const removePendingPage = (index: number) => {
     const newPages = [...pendingPages];
-    // 释放预览 URL
     URL.revokeObjectURL(newPages[index].preview);
     newPages.splice(index, 1);
     setPendingPages(newPages);
@@ -263,7 +260,7 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
                 />
               </label>
 
-              {/* NSFW 复选框（应用于新选择的图片） */}
+              {/* NSFW 复选框 */}
               <label className="flex items-center gap-2 text-sm cursor-pointer">
                 <input
                   type="checkbox"
@@ -387,7 +384,7 @@ export default function ChapterManager({ comic, onRefresh, onBack }: ChapterMana
                       className="relative w-12 h-16 border rounded overflow-hidden bg-gray-100 dark:bg-gray-700 flex-shrink-0"
                     >
                       <img
-                        src={page.url}
+                        src={page.thumbUrl || page.url}
                         alt={`${ch.title} - ${pIdx + 1}`}
                         className="w-full h-full object-cover"
                       />

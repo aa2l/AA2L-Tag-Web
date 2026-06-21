@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "AI 绘画图片画廊",
 };
 
+// app/layout.tsx
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,12 +31,18 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        {/* 主题色 */}
+        <meta name="theme-color" content="#F472B6" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        {/* PWA manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        {/* 原有主题脚本 */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 try {
-                  // 始终跟随系统主题
                   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                   const systemTheme = prefersDark ? 'dark' : 'light';
                   document.documentElement.setAttribute('data-theme', systemTheme);

@@ -15,6 +15,7 @@ export interface ComicPage {
   url: string;
   /** 模糊图路径（用于 NSFW 保护） */
   blurUrl: string;
+  thumbUrl: string;  // ← 新增：缩略图 URL
   /** 是否标记为 NSFW */
   nsfw: boolean;
 }
@@ -46,6 +47,7 @@ export interface ComicSeries {
   coverNsfw: boolean;
   /** 阅读方向 */
   readingDirection: ReadingDirection;
+  coverThumbUrl: string;
   status: ComicStatus;
   createdAt: string;
   updatedAt: string;

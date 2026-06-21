@@ -1,0 +1,21 @@
+{
+  "name": "AA2L学社展台",
+  "short_name": "AA2L展台",
+  "description": "AI绘画图片画廊与漫画阅读平台",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1425",
+  "theme_color": "#F472B6",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

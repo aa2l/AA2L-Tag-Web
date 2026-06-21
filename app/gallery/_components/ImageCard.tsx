@@ -38,10 +38,10 @@ export default function ImageCard({ img, isUnlocked, onClick, delay = 0 }: Image
     <div
       style={cardStyle}
       className="relative cursor-pointer group rounded-3xl overflow-hidden 
-        shadow-md shadow-pink-100/30 dark:shadow-pink-900/20 
-        hover:shadow-xl hover:shadow-pink-200/50 dark:hover:shadow-pink-800/30 
-        transition-all duration-300 hover:-translate-y-1.5 
-        border-2 border-pink-100 dark:border-pink-900/30 bg-card-soft"
+  shadow-md shadow-pink-100/30 dark:shadow-pink-900/20 
+  hover:shadow-xl hover:shadow-pink-200/50 dark:hover:shadow-pink-800/30 
+  transition-all duration-111700 ease-in-out hover:-translate-y-1.5 
+  border-2 border-pink-100 dark:border-pink-900/30 bg-card-soft"
       onClick={onClick}
     >
       <img

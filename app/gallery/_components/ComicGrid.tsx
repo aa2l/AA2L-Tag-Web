@@ -1,9 +1,10 @@
 // app/gallery/_components/ComicGrid.tsx
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 import type { ComicSeries } from '@/types/comic';
 import ComicCard from './ComicCard';
+import { BookOpen } from 'lucide-react';
 
 const BATCH_SIZE = 6;
 
@@ -54,7 +55,9 @@ export default function ComicGrid({
   if (comics.length === 0) {
     return (
       <div className="text-center py-16 px-4 bg-card-soft/80 dark:bg-card-soft/60 backdrop-blur-sm rounded-3xl border-2 border-pink-100 dark:border-pink-900/30">
-        <div className="text-6xl mb-4 flex justify-center">📖</div>
+        <div className="flex justify-center mb-4">
+          <BookOpen className="w-16 h-16 text-pink-200/50 dark:text-pink-500/20" />
+        </div>
         <p className="text-lg font-medium text-foreground">暂无漫画</p>
         <p className="text-sm text-secondary mt-1">还没有上传任何漫画作品</p>
       </div>
@@ -62,17 +65,19 @@ export default function ComicGrid({
   }
 
   return (
-    <div className="space-y-4">
-      {/* 漫画列表 */}
-      {displayedComics.map((comic, index) => (
-        <ComicCard
-          key={comic.id}
-          comic={comic}
-          isUnlocked={isUnlocked}
-          onOpenReader={onOpenReader}
-          delay={Math.min(index % 12, 8) * 60}
-        />
-      ))}
+    <div className="space-y-6">
+      {/* ===== 两栏网格布局 ===== */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {displayedComics.map((comic, index) => (
+          <ComicCard
+            key={comic.id}
+            comic={comic}
+            isUnlocked={isUnlocked}
+            onOpenReader={onOpenReader}
+            delay={Math.min(index % 12, 8) * 60}
+          />
+        ))}
+      </div>
 
       {/* 加载更多触发器 */}
       {hasMore && (
