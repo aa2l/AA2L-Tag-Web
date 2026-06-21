@@ -1,32 +1,37 @@
 // app/gallery/_components/SearchBar.tsx
+'use client';
 
 import { useState, useEffect, useRef } from 'react';
 import { Search, ChevronDown } from 'lucide-react';
 
-interface SearchBarProps {
-  searchTerm: string;
-  setSearchTerm: (value: string) => void;
-  sortType: 'newest' | 'oldest' | 'random';
-  setSortType: (value: 'newest' | 'oldest' | 'random') => void;
+export interface SortOption<T = string> {
+  value: T;
+  label: string;
 }
 
-const SORT_OPTIONS = [
-  { value: 'newest', label: '最新' },
-  { value: 'oldest', label: '最旧' },
-  { value: 'random', label: '随机' },
-];
+export interface SearchBarProps<T extends string = string> {
+  searchTerm: string;
+  setSearchTerm: (value: string) => void;
+  sortType: T;
+  setSortType: (value: T) => void;
+  sortOptions: readonly SortOption<T>[];
+  placeholder?: string;
+}
 
-export default function SearchBar({
+export default function SearchBar<T extends string>({
   searchTerm,
   setSearchTerm,
   sortType,
   setSortType,
-}: SearchBarProps) {
+  sortOptions,
+  placeholder = '搜索...',
+}: SearchBarProps<T>) {
   const [localInput, setLocalInput] = useState(searchTerm);
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
+  // 点击外部关闭下拉
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -37,6 +42,7 @@ export default function SearchBar({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // 同步外部搜索词变化
   useEffect(() => {
     setLocalInput(searchTerm);
   }, [searchTerm]);
@@ -59,12 +65,12 @@ export default function SearchBar({
     }
   };
 
-  const handleSelect = (value: 'newest' | 'oldest' | 'random') => {
+  const handleSelect = (value: T) => {
     setSortType(value);
     setIsOpen(false);
   };
 
-  const currentLabel = SORT_OPTIONS.find((opt) => opt.value === sortType)?.label || '最新';
+  const currentLabel = sortOptions.find((opt) => opt.value === sortType)?.label || sortOptions[0]?.label || '排序';
 
   return (
     <div className="flex items-center gap-2 flex-1 min-w-[180px]">
@@ -75,7 +81,7 @@ export default function SearchBar({
           type="text"
           value={localInput}
           onChange={(e) => handleInputChange(e.target.value)}
-          placeholder="搜索作者、模型或提示词..."
+          placeholder={placeholder}
           className="w-full pl-9 pr-8 py-1.5 text-sm rounded-full bg-card-soft dark:bg-card-soft transition ring-2 ring-pink-100 dark:ring-pink-900/30 focus:ring-pink-300 focus:ring-2 focus:outline-none"
         />
         {localInput && (
@@ -112,10 +118,10 @@ export default function SearchBar({
               : 'opacity-0 scale-95 pointer-events-none'
           }`}
         >
-          {SORT_OPTIONS.map((opt) => (
+          {sortOptions.map((opt) => (
             <button
-              key={opt.value}
-              onClick={() => handleSelect(opt.value as 'newest' | 'oldest' | 'random')}
+              key={String(opt.value)}
+              onClick={() => handleSelect(opt.value)}
               className={`w-full text-left px-4 py-2 text-sm transition-colors duration-150 ${
                 sortType === opt.value
                   ? 'text-pink-500 font-medium bg-pink-50 dark:bg-pink-900/20'

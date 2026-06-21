@@ -353,7 +353,7 @@ export default function AdminPage() {
           <h1 className="text-2xl font-bold"> 图片管理后台</h1>
           <Link href="/gallery" className="text-primary-dark hover:underline">← 回到画廊</Link>
         </div>
-
+        <Link href="/admin/comics" className="text-primary-dark hover:underline"> 漫画管理</Link>
         {/* 表单 */}
         <form onSubmit={handleSubmit} className="bg-white dark:bg-card rounded-xl shadow p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

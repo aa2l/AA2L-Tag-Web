@@ -1,0 +1,31 @@
+[
+  {
+    "id": "comic-mqmf4f8m-sdua",
+    "title": "1",
+    "author": "aa",
+    "description": "1",
+    "coverImage": "/comics/covers/cover-1781963599856-n3gi9q.webp",
+    "status": "completed",
+    "chapters": [
+      {
+        "id": "ch-01",
+        "title": "1",
+        "pages": [
+          {
+            "url": "/comics/comic-mqmf4f8m-sdua/temp-1781966314547/1781966314587-bvxoqu-年年岁岁岁岁平安 1.webp",
+            "blurUrl": "",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqmf4f8m-sdua/temp-1781966323833/1781966323872-spdls5-年年岁岁岁岁平安 2.webp",
+            "blurUrl": "",
+            "nsfw": false
+          }
+        ],
+        "createdAt": "2026-06-20T14:38:50.351Z"
+      }
+    ],
+    "createdAt": "2026-06-20T13:53:27.334Z",
+    "updatedAt": "2026-06-20T14:38:50.351Z"
+  }
+]

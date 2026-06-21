@@ -15,3 +15,10 @@ export const MODEL_LABELS: Record<ModelType, string> = {
   anima: 'Anima',
   newbie: 'Newbie',
 };
+// ===== 新增：内容类型（用于一级导航） =====
+export type ContentType = 'gallery' | 'comics';
+
+export const CONTENT_TYPES: { value: ContentType; label: string; icon: string }[] = [
+  { value: 'gallery', label: '图片画廊', icon: '🖼️' },
+  { value: 'comics', label: '漫画', icon: '📖' },
+];
