@@ -1,5 +1,64 @@
 [
   {
+    "id": 1782138605155,
+    "image_url": "/images/1782138605155_00003-3479100230.webp",
+    "blur_image_url": "/images/1782138605155_00003-3479100230_blur.webp",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "waiIllustriousSDXL_v170",
+      "style_prompt": "odyk,jaggy lines,<lora:odyk:0.8>,(artist:mikozin:0.5),(reoen:0.5),",
+      "quality_prompt": "masterpiece, best quality, very aesthetic, absurdres,newest,",
+      "positive_prompt": "1girl,solo,jia xichun \\(project moon\\),china dress,long sleeves,sleeves past wrists,red nails,wide sleeves,nail polish,<lora:xichun_ilxl_v1:0.8>,straight on,leaning forward,cowboy shot,hand on thigh,v covering eye,heart,wink,happy,expressionless,white background,simple background,;\\(, \nmasterpiece, best quality, very aesthetic, absurdres,newest, safe,odyk,jaggy lines,<lora:odyk:0.8>,(artist:mikozin:0.5),(reoen:0.5),",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi)),window,necklace,vestless,vest,",
+      "loras": [
+        "<lora:odyk:0.8>",
+        "<lora:xichun_ilxl_v1:0.8>"
+      ],
+      "resolution": "2752x1920",
+      "steps": 28,
+      "cfg_scale": 5,
+      "denoise": 0.3,
+      "sampler": "Euler a",
+      "schedule": "Automatic(karras)",
+      "seed": "3479100230",
+      "extra_params": "ADetailer model: face_yolov8n_v2.pt, ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.5, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer Version: Neo,",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-06-22T14:30:06.794Z"
+  },
+  {
+    "id": 1782138205152,
+    "image_url": "/images/1782138205152_ComfyUI_00068.webp",
+    "blur_image_url": "/images/1782138205152_ComfyUI_00068_blur.webp",
+    "author": "佚名",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-22T14:23:26.384Z"
+  },
+  {
+    "id": 1782138030638,
+    "image_url": "/images/1782138030638_ComfyUI_00002.webp",
+    "blur_image_url": "/images/1782138030638_ComfyUI_00002_blur.webp",
+    "author": "aa2l",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-22T14:20:31.121Z"
+  },
+  {
+    "id": 1782138019606,
+    "image_url": "/images/1782138019606_ComfyUI_00004.webp",
+    "blur_image_url": "/images/1782138019606_ComfyUI_00004_blur.webp",
+    "author": "aa2l",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-22T14:20:20.863Z"
+  },
+  {
     "id": 1782137063018,
     "image_url": "/images/1782137063018_ComfyUI_00055.webp",
     "blur_image_url": "/images/1782137063018_ComfyUI_00055_blur.webp",
