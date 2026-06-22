@@ -1,5 +1,89 @@
 [
   {
+    "id": 1782136878415,
+    "image_url": "/images/1782136878415_ComfyUI_temp_vvzsa_00004.webp",
+    "blur_image_url": "/images/1782136878415_ComfyUI_temp_vvzsa_00004_blur.webp",
+    "author": "佚名",
+    "model": "newbie",
+    "params": {},
+    "nsfw": false,
+    "created_at": "2026-06-22T14:01:21.091Z"
+  },
+  {
+    "id": 1782136754468,
+    "image_url": "/images/1782136754468_15CACC3086F0B44800CC7B88F4B82DD4.webp",
+    "blur_image_url": "/images/1782136754468_15CACC3086F0B44800CC7B88F4B82DD4_blur.webp",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "0.7::painterly,impasto::,0.7::artist:nai ga::,4::library_of_ruina,library_of_ruina_style::,2::game cg::,0.6::artist:ruoganzhao::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "0.7::painterly,impasto::,0.7::artist:nai ga::,4::library_of_ruina,library_of_ruina_style::,2::game cg::,0.6::artist:ruoganzhao::,\n1girl,amiya_(arknights),open mouth,surprised,wide-eyed,happy,\nfemale focus,blurry background,1.5::from side::,standing,head up,looking up,library,bookshelf,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "4209178264",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-06-22T13:59:17.384Z"
+  },
+  {
+    "id": 1782136326123,
+    "image_url": "/images/1782136326123_ComfyUI_temp_yuvsx_00054.webp",
+    "blur_image_url": "/images/1782136326123_ComfyUI_temp_yuvsx_00054_blur.webp",
+    "author": "aa2l",
+    "model": "anima",
+    "params": {
+      "model_name": "Anima base V10",
+      "style_prompt": "@kankan33333,",
+      "quality_prompt": "year 2025, masterpiece, best quality, score_8, score_7,absurdres,",
+      "nl": "the girl is standing and leaning forward,the perspective is behind the girl,",
+      "positive_prompt": "year 2025, masterpiece, best quality, score_8, score_7,absurdres,\nthe girl is standing and leaning forward,bent over,the girl breaks her vulva with her hand,shy,\ngirl,pink hair,gloves,halo,pink eyes,white gloves,breasts,bandaid,hat,dress,hair rings,hairband,ahoge,bandaid on leg,cleavage,id card,hair ornament,crossed bandaids,bangs,pussy,being violated,nsfw,pussy,:O\nfrom_back,the perspective is behind the girl,\n@kankan33333,",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,(sleeves:2),bag,coat,open jacket，chest decoration,back decoration,wings,txt,",
+      "loras": [
+        "<xiaozhi1.safetensors>（这lora我自己炼的网上你搜不到）\"strength_model\": 1.0, \"strength_clip\": 1.0,"
+      ],
+      "resolution": "1232×1840",
+      "steps": 38,
+      "cfg": 5,
+      "denoise": 1,
+      "sampler": "euler_an",
+      "schedule": "simple",
+      "seed": "1019687707276033",
+      "workflow_json": ""
+    },
+    "nsfw": true,
+    "created_at": "2026-06-22T13:52:07.307Z"
+  },
+  {
     "id": 1782061868295,
     "image_url": "/images/1782061868295_00011-1558003888.webp",
     "blur_image_url": "/images/1782061868295_00011-1558003888_blur.webp",
