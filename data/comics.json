@@ -1,5 +1,109 @@
 [
   {
+    "id": "comic-mqwm74zg-pb4l",
+    "title": "如果早知道男孩子也会被...",
+    "author": "aa2l",
+    "description": "也在做",
+    "coverImage": "/comics/covers/cover-1782580145336-3me6e7.webp",
+    "coverBlurImage": "",
+    "coverNsfw": false,
+    "readingDirection": "top-to-bottom",
+    "status": "ongoing",
+    "chapters": [
+      {
+        "id": "ch-01",
+        "title": "第一话",
+        "pages": [
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580167247-tu3scj-1.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580167247-tu3scj-1_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580169575-ujnojt-2.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580169575-ujnojt-2_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580170891-nl832h-3.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580170891-nl832h-3_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580173437-wxa92w-4.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580173437-wxa92w-4_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580176333-wk3304-5.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580176333-wk3304-5_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580178767-tdqb36-6.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm74zg-pb4l/ch-01/1782580178767-tdqb36-6_thumb.webp",
+            "nsfw": false
+          }
+        ],
+        "createdAt": "2026-06-27T17:09:27.173Z"
+      }
+    ],
+    "createdAt": "2026-06-27T17:09:13.084Z",
+    "updatedAt": "2026-06-27T17:09:41.273Z"
+  },
+  {
+    "id": "comic-mqwm2fb2-5sju",
+    "title": "年年岁岁碎碎平安",
+    "author": "aa2l",
+    "description": "在做",
+    "coverImage": "/comics/covers/cover-1782579917820-3vbiw6.webp",
+    "coverBlurImage": "",
+    "coverNsfw": false,
+    "readingDirection": "top-to-bottom",
+    "status": "ongoing",
+    "chapters": [
+      {
+        "id": "ch-01",
+        "title": "第一话",
+        "pages": [
+          {
+            "url": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579961392-vmn8da-年年岁岁岁岁平安 1.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579961392-vmn8da-年年岁岁岁岁平安 1_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579964302-oq81r5-年年岁岁岁岁平安 2.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579964302-oq81r5-年年岁岁岁岁平安 2_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579967707-88oe5j-年年岁岁岁岁平安 3.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579967707-88oe5j-年年岁岁岁岁平安 3_thumb.webp",
+            "nsfw": false
+          },
+          {
+            "url": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579969726-yng43u-年年岁岁岁岁平安 4.webp",
+            "blurUrl": "",
+            "thumbUrl": "/comics/comic-mqwm2fb2-5sju/ch-01/1782579969726-yng43u-年年岁岁岁岁平安 4_thumb.webp",
+            "nsfw": false
+          }
+        ],
+        "createdAt": "2026-06-27T17:06:01.049Z"
+      }
+    ],
+    "createdAt": "2026-06-27T17:05:33.182Z",
+    "updatedAt": "2026-06-27T17:06:13.305Z"
+  },
+  {
     "id": "comic-mqo1u0np-oazl",
     "title": "彼之呼吸",
     "author": "泠雨",
