@@ -324,7 +324,7 @@ export default function Gallery() {
       >
         <div className="relative z-10">
           <h2 className="text-2xl font-bold text-foreground flex items-center justify-center gap-2">
-            「 AA2l学社展台 」
+            「 AA2l图书馆 」
           </h2>
           <p className="header-sub">点击切换主题</p>
           <p className="text-sm text-secondary dark:text-secondary mt-1">"为学，为作，为突破"</p>
