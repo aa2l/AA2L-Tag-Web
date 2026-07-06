@@ -1,5 +1,519 @@
 [
   {
+    "id": 1783341403038,
+    "image_url": "/images/1783341403038_9c4003d0216a4fd8d5708c14fe006432.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "-2::artist collaboration::,0.6::artist:shanyao_jiang_tororo::,0.6::artist:mika_pikazo::,0.6::artist:modare::,1.2::artist:omone_hokoma_agm::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "-2::artist collaboration::,0.6::artist:shanyao_jiang_tororo::,0.6::artist:mika_pikazo::,0.6::artist:modare::,1.2::artist:omone_hokoma_agm::,\n1girl,loli,solo,tiphereth_a_(project_moon),brown capelet,white shirt,puffy long sleeves,brown miniskirt,brown pantyhose,\nfemale focus,from below,steaming body,simple background, crossed legs, \nmasterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,2::detail eyes::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "1563540",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:36:43.053Z"
+  },
+  {
+    "id": 1783341310642,
+    "image_url": "/images/1783341310642_fc68134e2d983222d75704d750cb04de_720.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "painterly,4::reverse:1999_style::,1.2::artist:reoen::,0.7::artist:yoneyama mai::,0.9::artist:xilmo::,",
+      "quality_prompt": "year_2025,newest,masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "painterly,4::reverse:1999_style::,1.2::artist:reoen::,0.7::artist:yoneyama mai::,0.9::artist:xilmo::,year_2025,newest,\n1girl,isekaijoucho, hair flower,yellow flower,\nfemale focus, flower field, sunflower,upper body,from below,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,2::detail eyes::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "1216×832",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "on",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "3528724",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:35:10.657Z"
+  },
+  {
+    "id": 1783341197403,
+    "image_url": "/images/1783341197403_87dd6dbe55bc2efd26feae31b9eb2343.png",
+    "author": "狐狸猫",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.4::artist:shulanshu::,1.2::artist:abpart::,0.8::artist:yukishima_momo::,0.6::artist:shennai misha::,",
+      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,",
+      "nl": "",
+      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,\n1.4::artist:shulanshu::,1.2::artist:abpart::,0.8::artist:yukishima_momo::,0.6::artist:shennai misha::,\n1girl,solo,fox girl,large fox ears,white hair,hair intakes, sidelocks, hair between eyes, long bangs, wavy hair, big hair, hair over shoulder, yelloe eyes,\nmedium breasts,naked towel, washing,messy hair,wet hair,\nsmile,half close eyes,\nclose up,dynamic angle,\nphoto background,washroom,\n1.35::A highly finished photo-style artwork of a character's body that has lively color, graphic texture, realistic skin surface, and lifelike flesh with little obliques::.,The image is highly intricate finished drawn. Only the character's face is in anime style, but their body is in realistic style.,, very aesthetic, masterpiece, no text,",
+      "undesired_content": "",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 5,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "2975844976",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:33:17.427Z"
+  },
+  {
+    "id": 1783341017604,
+    "image_url": "/images/1783341017604_e0f650addd2af00707d10809bace157b.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "::0.8::artist:patzzi::,0.6::su_reut,::0.6::artist:na_tarapisu153,::",
+      "quality_prompt": "very aesthetic, masterpiece,",
+      "nl": "",
+      "base_prompt": "saki,mx2j,,2::game cg,zenless zone zero::, 2::girls' frontline 2: exilium,official art::,3::blender (medium),3d::,1.85::realistic,photorealistic,photo (medium)::, 2.5::game screenshot::,year 2025,-5::artist collaboration::,\n{upper body},{close-up},{{dynamic pose}},{{dynamic angle}},{{cinematic angle}},{{foreshortening}},{three-quarter view},{letterboxed},fisheye,{{very wide shot}},blurry background,blurry vision,blurry,bokeh,overexposure,strong rim light,intense shadows,1girl,solo,window,cityscape,from side,wallpaper (object),holding cup,coffee,{steam},{sitting},looking back,sunset,blue sky,cloudy sky,{snow},{snowing},snowflakes,indoors,table,chair,book,paper,arm hug,scarf,white coat,head down,{cold},\n\n\ncinematic angle,dynamic angle,cowboy shot,from behind",
+      "undesired_content": "bad hands,bad feet, extra arms, extra legs, bad body,extar fingers,",
+      "resolution": "1216×832",
+      "steps": 28,
+      "prompt_guidance": 5.5,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "1956474708",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:30:17.620Z"
+  },
+  {
+    "id": 1783340869932,
+    "image_url": "/images/1783340869932_9ca6273ab939fe1f9c352bb7cddd222d_720.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "-2::artist collaboration::,0.6::artist:ebora::,1::artist:doppel_(bonnypir)::,1.2::artist:betanonbeet::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "-2::artist collaboration::,0.6::artist:ebora::,1::artist:doppel_(bonnypir)::,1.2::artist:betanonbeet::,newest,1girl,solo,hikari_(blue_archive), seductive smile,white pantyhose,hand on mouth,open mouth,female cous,close-up,masterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,2::detail eyes::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "2748720",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:27:49.944Z"
+  },
+  {
+    "id": 1783340719957,
+    "image_url": "/images/1783340719957_c87a2fa74907b916c0f6ad7066cd258d_720.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "pixel art,0.7::artist:tinia_etru,artist:takeez3_::,1.2::artist:uramoto_kouji::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "pixel art,0.7::artist:tinia_etru,artist:takeez3_::,1.2::artist:uramoto_kouji::,no text,1girl,solo,franka_(arknights),fox girl,large breasts,gray_collared_shirt,gray skirt, black thighhighs,female focus,masterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,2::detail eyes::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "1024×1024",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "1318260",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:25:19.964Z"
+  },
+  {
+    "id": 1783340510231,
+    "image_url": "/images/1783340510231_C69C38F36FFB79086C9BA35967A64BE5.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "[[artist:shimejinameko]],artist:remsrar,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,",
+      "nl": "",
+      "base_prompt": "[[artist:shimejinameko]],artist:remsrar,\n1girl,solo, ryoshu (limbus company), ryoshu (project moon),black hair,very long hair,red eyes,\nbride,hood,hooded kimono,japanese clothes,jewelry,ring,uchikake,wedding,wedding ring,white hood,white kimono,white veil,holding katana,\nspider web,red web,\nsad,exhausted,expressionless,\ndynamic angle,depth of field,high contrast,colorful,detailed light,light leaks,beautiful detailed glow,best shadow,cinematic lighting,ray tracing,close-up,from behind,looking back,cowboy shot,from below,\nmasterpiece,best quality,very aesthetic,",
+      "undesired_content": "2::blurry,lowres,error,film grain,scan artifacts,worst quality,bad quality,jpeg artifacts,very displeasing,chromatic aberration,logo,dated,signature,normal quality,bad quality,low quality,worst quality,lowres,displeasing,very displeasing,bad,bad anatomy,bad hands,error,missing,missing finger,extra,extra digits,fewer,fewer digits,cropped,JPEG artifacts,signature,watermark,username,multiple views,chibi::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 5.5,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "307428784",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:21:50.242Z"
+  },
+  {
+    "id": 1783340406934,
+    "image_url": "/images/1783340406934_dfe5a88b57f0dce32b64d3d2f90e85b2.png",
+    "author": "狐狸猫",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,",
+      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,outline,",
+      "nl": "",
+      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,outline,\n1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,\n1girl,solo,faust(project moon),white hair,blue eyes,\nmedium breasts,black nun veil, white headband, black cropped jacket, off-the-shoulder, white cuffs, white halter bodysuit, halterneck, ruffled hem, white garter belt, white garter straps, white thigh-highs, white stockings,covered nipples,cameltoe, \nlooking at view,confused,?,@_@,parted lips, ",
+      "undesired_content": "blurry, lowres, error, worst quality, bad anatomy, bad hands, bad quality, jpeg artifacts, bad quality, very displeasing, chromatic aberration, @_@, glowing eyes, white background, split screen,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "3752664675",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": true,
+    "created_at": "2026-07-06T12:20:06.941Z"
+  },
+  {
+    "id": 1783339875234,
+    "image_url": "/images/1783339875234_00040-1636469188.png",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v150.safetensors",
+      "style_prompt": "<lora:odyk:0.8>,(reoen:0.5),(mikozin:0.5)",
+      "quality_prompt": "masterpiece, best quality, very aesthetic, absurdres,newest,",
+      "positive_prompt": "1girl, solo, malkuth \\(project moon\\), long hair, brown coat, white shirt, black vest, black pants, brown bowtie, happy, v, laughing, cowboy shot, simple background, holding books, outstretched arm,from side,\nmasterpiece, best quality, very aesthetic, absurdres,newest, safe,odyk,jaggy lines,<lora:odyk:0.8>,(reoen:0.5),(mikozin:0.5)",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi)),window,necklace",
+      "loras": [
+        "<lora:odyk:0.8>"
+      ],
+      "resolution": "1368x960",
+      "steps": 28,
+      "cfg_scale": 4,
+      "denoise": 1,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "1636469188",
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:11:15.251Z"
+  },
+  {
+    "id": 1783339676927,
+    "image_url": "/images/1783339676927_00000-4246207509.jpg",
+    "author": "海尔柑子猫",
+    "model": "sd",
+    "params": {
+      "model_name": "waiIllustriousSDXL_v160",
+      "style_prompt": "reoen,artist:ciloranko,artist:akakura,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdresnewest,",
+      "positive_prompt": "parameters1girl,solo,rodion \\(project moon\\),huge breasts,brown long hair,black dress,long dress,frills,puffy sleeves,shrug (clothing),cleavage,DulcineaLimbus,(from behind:1.2),portrait,upper body,dark theme,looking back,shaded face,glowing eyes,red eyes,Amusement park\nmasterpiece,best quality,very aesthetic,absurdresnewest,safe,reoen,artist:ciloranko,artist:akakura,<lora:轮廓线:0.6>,<lora:Dulcinea_Limbus_Illustrious:1>",
+      "negative_prompt": "=muscular,animal,bad hands,bad fingers,multiple heads,3d,render,watermark,censored,sketch,loli,child,watermark,sketch,censored,elf ears,((chibi))",
+      "loras": [
+        "<lora:轮廓线:0.6>",
+        "<lora:Dulcinea_Limbus_Illustrious:1>"
+      ],
+      "resolution": "1894x2396",
+      "steps": 28,
+      "cfg_scale": 5,
+      "denoise": 0.3,
+      "sampler": "DPM++ 2M",
+      "schedule": "Karras",
+      "seed": "4246207509",
+      "extra_params": "",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:07:56.934Z"
+  },
+  {
+    "id": 1783339470161,
+    "image_url": "/images/1783339470161_00011-1018823650.png",
+    "author": "海尔柑子猫",
+    "model": "anima",
+    "params": {
+      "model_name": "anima_baseV10",
+      "style_prompt": "@reoen,",
+      "quality_prompt": "newest, best quality, score_5, highres, ",
+      "nl": "",
+      "positive_prompt": "newest, best quality, score_5, highres, safe,\n1girl,solo,don quixote \\(project moon\\), blonde short hair,flower hair ornament, transparent dress,see-through dress,china dress,cowboy shot,contrapposto, holding fan,dynamic angle,looking at viewer,simple background, nipples,pussy,\n@reoen, ",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,blurry, jpeg artifacts, lowres,censor,",
+      "loras": [
+        ""
+      ],
+      "resolution": "960×1368",
+      "steps": 38,
+      "cfg": 4.5,
+      "denoise": 1,
+      "sampler": "euler_an",
+      "schedule": "Beta",
+      "seed": "1018823650",
+      "workflow_json": ""
+    },
+    "nsfw": true,
+    "created_at": "2026-07-06T12:04:30.169Z"
+  },
+  {
+    "id": 1783338764086,
+    "image_url": "/images/1783338764086_7ddc379c67197d8c504766a1f44683f0_720.png",
+    "author": "㿟君MrWhite",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNsfwIllustrious17.Fa3Z,",
+      "style_prompt": "(masterpiece),(best quality),(absurdres),\n(artist:betabeet:0.9),(artist:ningen_mame:0.6),(artist:reoen:0.9),(mofu_namako:0.7),artist:akakura,[artist:mankai kaika],",
+      "quality_prompt": "(masterpiece),(best quality),(absurdres),",
+      "positive_prompt": "(masterpiece),(best quality),(absurdres),\n(artist:betabeet:0.9),(artist:ningen_mame:0.6),(artist:reoen:0.9),(mofu_namako:0.7),artist:akakura,[artist:mankai kaika],shion_(mirudakemann),cumulonimbus,rainy days,rain,cloudy,city,street,park,bench,park bench,anguish,gloom,on_back,arm_above_head,landscape,from_side,from_below,depth of field,looking_outside,looking_afar,1girl,solo,dark blue hair,black under-rim eyewear,short hair,big breasts,blue eyes,\nfolded hair,hair half undone,windbreaker,sweater,white sweater,microskirt,black thighhighs,white leg warmers,photo background,",
+      "negative_prompt": "bad quality,worst quality,worst detail,sketch,censor,",
+      "loras": [
+        ""
+      ],
+      "resolution": "1280x853",
+      "steps": 20,
+      "cfg_scale": 7,
+      "denoise": 0.5,
+      "sampler": "DPM++ 2M",
+      "schedule": "Karras",
+      "seed": "1795692865",
+      "extra_params": "ADetailer model: face_yolov8n.pt, ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer version: 25.3.0, Version: f1.7.0-v1.10.1RC-latest-2189-g8928c76e",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T11:52:44.100Z"
+  },
+  {
+    "id": 1783338380950,
+    "image_url": "/images/1783338380950_212C17150072AA9F51DE7FF93149E1B7.png",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "-2::artist collaboration::,0.6::artist:cogecha::,0.6::artist:artist:sho_(sho lwlw)::,1.2::artist:kankan33333,1.2::artist:remsrar::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "-2::artist collaboration::,0.6::artist:cogecha::,0.6::artist:artist:sho_(sho lwlw)::,1.2::artist:kankan33333,1.2::artist:remsrar::,\n1boy,solo,black hair,\nblack suit,black pants,dark blue robe, long sleeves,\nblurry background,male focus,face shrouded in complete darkness, only glowing eyes visible,void face,face obscured by shadow,glowing eyes,dynamic pose,motion lines,speed lines,moon,moonlight,flame from eyes,blue fire,shadow covered face,1.5::no pupils,eye_trail,flaming_eyes,one eye only,blue fire::,holding katana,on_one_knee,east_asian_architecture,head down,arm up,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "4247691891",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T11:46:20.961Z"
+  },
+  {
     "id": 1782582683622,
     "image_url": "/images/1782582683622_ComfyUI_06816.webp",
     "blur_image_url": "/images/1782582683622_ComfyUI_06816_blur.webp",
