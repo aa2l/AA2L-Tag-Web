@@ -1,5 +1,32 @@
 [
   {
+    "id": 1783342710952,
+    "image_url": "/images/1783342710952_image (71).png",
+    "author": "aa2l",
+    "model": "sd",
+    "params": {
+      "model_name": "waiNSFWIllustrious_v150",
+      "style_prompt": "impasto,(watanabe tomari:1.05),(fjsmu:0.7),(watari \\(nijimukiokuiro\\):0.85),",
+      "quality_prompt": "newest,very awa,masterpiece,best quality,very aesthetic,",
+      "positive_prompt": "impasto,(watanabe tomari:1.05),(fjsmu:0.7),(watari \\(nijimukiokuiro\\):0.85),vista-tan,sky,cloud,scenery,(dust drifting:0.6),(smoke and dust:0.4),wind,(ruins:1.2),newest,very awa,masterpiece,best quality,very aesthetic,1girl,solo,little_girl,grin,sitting,blue hair,wearing a hood,blue eyes,short hair,crossed bangs,hair between eyes,yellow raincoat,dynamic_angle,looking_afar,landscape,panorama,",
+      "negative_prompt": "text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,mammal,anthro,furry,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,rain,",
+      "loras": [
+        ""
+      ],
+      "resolution": "2400x1512",
+      "steps": 39,
+      "cfg_scale": 5.5,
+      "denoise": 1,
+      "sampler": "Euler a",
+      "schedule": "Karras",
+      "seed": "382406491",
+      "extra_params": "ADetailer model: face_yolov8n.pt, ADetailer prompt: \"(watanabe tomari:1.05),(fjsmu:0.7),(watari \\\\(nijimukiokuiro\\\\):0.85),newest,very awa,masterpiece,best quality,very aesthetic,\", ADetailer negative prompt: \"text,bad quality,worst quality,worst detail,censor,worst quality,old,early,low quality,lowres,signature,username,logo,bad hands,mutated hands,mammal,anthro,furry,ambiguous form,feral,semi-anthro,worst aesthetic,ai-generated,\", ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.15, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer version: 25.3.0, kohya_hrfix_enabled: True, kohya_hrfix_block_number: 3, kohya_hrfix_downscale_factor: 2, kohya_hrfix_start_percent: 0, kohya_hrfix_end_percent: 0.35, kohya_hrfix_downscale_after_skip: True, kohya_hrfix_downscale_method: bicubic, kohya_hrfix_upscale_method: bicubic, latent_modifier_enabled: True, latent_modifier_sharpness_multiplier: 0, latent_modifier_sharpness_method: anisotropic, latent_modifier_tonemap_multiplier: 0, latent_modifier_tonemap_method: reinhard, latent_modifier_tonemap_percentile: 100, latent_modifier_contrast_multiplier: 0, latent_modifier_combat_method: subtract, latent_modifier_combat_cfg_drift: 0, latent_modifier_rescale_cfg_phi: 0, latent_modifier_extra_noise_type: gaussian, latent_modifier_extra_noise_method: add, latent_modifier_extra_noise_multiplier: 0, latent_modifier_extra_noise_lowpass: 100, latent_modifier_divisive_norm_size: 127, latent_modifier_divisive_norm_multiplier: 0, latent_modifier_spectral_mod_mode: hard_clamp, latent_modifier_spectral_mod_percentile: 5, latent_modifier_spectral_mod_multiplier: 0, latent_modifier_affect_uncond: None, latent_modifier_dyn_cfg_augmentation: None, Version: f2.0.1v1.10.1-previous-608-ge2fe29c1",
+      "workflow_json": ""
+    },
+    "nsfw": false,
+    "created_at": "2026-07-06T12:58:30.999Z"
+  },
+  {
     "id": 1783341403038,
     "image_url": "/images/1783341403038_9c4003d0216a4fd8d5708c14fe006432.png",
     "author": "花霖",
@@ -315,51 +342,6 @@
     "created_at": "2026-07-06T12:21:50.242Z"
   },
   {
-    "id": 1783340406934,
-    "image_url": "/images/1783340406934_dfe5a88b57f0dce32b64d3d2f90e85b2.png",
-    "author": "狐狸猫",
-    "model": "nai",
-    "params": {
-      "model_name": "Noval AI v4.5",
-      "style_prompt": "1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,",
-      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,outline,",
-      "nl": "",
-      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,outline,\n1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,\n1girl,solo,faust(project moon),white hair,blue eyes,\nmedium breasts,black nun veil, white headband, black cropped jacket, off-the-shoulder, white cuffs, white halter bodysuit, halterneck, ruffled hem, white garter belt, white garter straps, white thigh-highs, white stockings,covered nipples,cameltoe, \nlooking at view,confused,?,@_@,parted lips, ",
-      "undesired_content": "blurry, lowres, error, worst quality, bad anatomy, bad hands, bad quality, jpeg artifacts, bad quality, very displeasing, chromatic aberration, @_@, glowing eyes, white background, split screen,",
-      "resolution": "832×1216",
-      "steps": 28,
-      "prompt_guidance": 6,
-      "variety": "off",
-      "sampler": "Euler a",
-      "schedule": "karras",
-      "seed": "3752664675",
-      "characters": [
-        {
-          "name": "Character 1",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 2",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 3",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 4",
-          "prompt": "",
-          "undesired_content": ""
-        }
-      ]
-    },
-    "nsfw": true,
-    "created_at": "2026-07-06T12:20:06.941Z"
-  },
-  {
     "id": 1783339875234,
     "image_url": "/images/1783339875234_00040-1636469188.png",
     "author": "海尔柑子猫",
@@ -413,33 +395,6 @@
     },
     "nsfw": false,
     "created_at": "2026-07-06T12:07:56.934Z"
-  },
-  {
-    "id": 1783339470161,
-    "image_url": "/images/1783339470161_00011-1018823650.png",
-    "author": "海尔柑子猫",
-    "model": "anima",
-    "params": {
-      "model_name": "anima_baseV10",
-      "style_prompt": "@reoen,",
-      "quality_prompt": "newest, best quality, score_5, highres, ",
-      "nl": "",
-      "positive_prompt": "newest, best quality, score_5, highres, safe,\n1girl,solo,don quixote \\(project moon\\), blonde short hair,flower hair ornament, transparent dress,see-through dress,china dress,cowboy shot,contrapposto, holding fan,dynamic angle,looking at viewer,simple background, nipples,pussy,\n@reoen, ",
-      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,blurry, jpeg artifacts, lowres,censor,",
-      "loras": [
-        ""
-      ],
-      "resolution": "960×1368",
-      "steps": 38,
-      "cfg": 4.5,
-      "denoise": 1,
-      "sampler": "euler_an",
-      "schedule": "Beta",
-      "seed": "1018823650",
-      "workflow_json": ""
-    },
-    "nsfw": true,
-    "created_at": "2026-07-06T12:04:30.169Z"
   },
   {
     "id": 1783338764086,
