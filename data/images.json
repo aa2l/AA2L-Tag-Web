@@ -1,5 +1,263 @@
 [
   {
+    "id": 1785603094901,
+    "image_url": "/images/1785603094901_00011-1018823650.webp",
+    "blur_image_url": "/images/1785603094901_00011-1018823650_blur.webp",
+    "author": "海尔柑子猫",
+    "model": "anima",
+    "params": {
+      "model_name": "Anima_baseV10",
+      "style_prompt": "@reoen, ",
+      "quality_prompt": "newest, best quality, score_5, highres,",
+      "nl": "",
+      "positive_prompt": "newest, best quality, score_5, highres, safe,\n1girl,solo,don quixote \\(project moon\\), blonde short hair,flower hair ornament, transparent dress,see-through dress,china dress,cowboy shot,contrapposto, holding fan,dynamic angle,looking at viewer,simple background, nipples,pussy,\n@reoen, \n",
+      "negative_prompt": "worst quality, low quality, score_1, score_2, score_3, artist name,blurry, jpeg artifacts, lowres,censor\n",
+      "loras": [
+        ""
+      ],
+      "resolution": "960x1368",
+      "steps": 30,
+      "cfg": 4.5,
+      "denoise": 1,
+      "sampler": "ER SDE",
+      "schedule": "Beta",
+      "seed": "1018823650",
+      "workflow_json": ""
+    },
+    "nsfw": true,
+    "created_at": "2026-08-01T16:51:35.410Z"
+  },
+  {
+    "id": 1785602269539,
+    "image_url": "/images/1785602269539_a63135c57e9c8c60aed04a937e0111a0_720.webp",
+    "blur_image_url": "/images/1785602269539_a63135c57e9c8c60aed04a937e0111a0_720_blur.webp",
+    "author": "星海之浪",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "[[[artist:kedama_milk]]],[[[[[artist:na_tarapisu153]]]]],nalphanne,[shiro9jira] [[ringouulu]], Klaius,artist:ciloranko,artist:suyamori, [artist:shuri_(84k)], ,artist:kaede_(sayappa), [[artist:mignon]],[[[[[ningen mame]]]]],year 2024",
+      "quality_prompt": "masterpiece, best quality, ultra-detailed, 8k, absurdres, ",
+      "nl": "",
+      "base_prompt": "masterpiece, best quality, ultra-detailed, 8k, absurdres, \n\n1girl, cat ears, white and blue hair, white flowers in hair, white skin, \namber right eye, blue left eye, heterochromia, gentle expression, facing viewer, glossy eyes,full body，loose shirt, loose clothes, oversized shirt, long shirt, white shirt, long sleeves, no pants, shirt overhang, see-through silhouette, see-through clothes, naked shirt\n\nright hand on  shoulder, side view，standing, ，Look to the left，barefoot, bare legs, toenails, toes, Squat,legs together,Hugging own legs,{{Sitting with bent legs}},sitting\n\ngentle atmosphere, clean line art, anime illustration\n\n,clean anime art style，delicate colors，\nshallow depth of field, smooth anime skin, claen line art\n\nno text,\n\n\n[[[artist:kedama_milk]]],[[[[[artist:na_tarapisu153]]]]],nalphanne,[shiro9jira] [[ringouulu]], Klaius,artist:ciloranko,artist:suyamori, [artist:shuri_(84k)], ,artist:kaede_(sayappa), [[artist:mignon]],[[[[[ningen mame]]]]],year 2024",
+      "undesired_content": "worst quality, low quality, deformed, blurry, 3d, realistic, colorful, heavy shading, messy background, extra limbs, bad anatomy, chibi, watermark, text, signature, thick shadow, glowing, bright saturated colors",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 5,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "3432940767",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-08-01T16:37:52.779Z"
+  },
+  {
+    "id": 1785602027379,
+    "image_url": "/images/1785602027379_dfe5a88b57f0dce32b64d3d2f90e85b2.webp",
+    "blur_image_url": "/images/1785602027379_dfe5a88b57f0dce32b64d3d2f90e85b2_blur.webp",
+    "author": "狐狸猫",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,",
+      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,",
+      "nl": "",
+      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,newest,outline,\n1.4::artist:pepa::,0.8::artist:shiro chan46 ::,1.2::artist:ushikani kassen::,0.5::artist:jj.jj::,0.8::artist:kinhasu::,\n1girl,solo,faust(project moon),white hair,blue eyes,\nmedium breasts,black nun veil, white headband, black cropped jacket, off-the-shoulder, white cuffs, white halter bodysuit, halterneck, ruffled hem, white garter belt, white garter straps, white thigh-highs, white stockings,covered nipples,cameltoe, \nlooking at view,confused,?,@_@,parted lips, ",
+      "undesired_content": "blurry, lowres, error, worst quality, bad anatomy, bad hands, bad quality, jpeg artifacts, bad quality, very displeasing, chromatic aberration, @_@, glowing eyes, white background, split screen",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "3752664675",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": true,
+    "created_at": "2026-08-01T16:33:50.569Z"
+  },
+  {
+    "id": 1785601909057,
+    "image_url": "/images/1785601909057_218838339f947cc8305fde5882472542_720.webp",
+    "blur_image_url": "/images/1785601909057_218838339f947cc8305fde5882472542_720_blur.webp",
+    "author": "狐狸猫",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.2::artist:bara (03 bara )::,0.8::artist:al guang::,0.8::artist:hoodier::,0.5::artist:nekoya (nekodayo 22)::,0.6::artist:team.achv::,-2::artist collaboration::,",
+      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,newest,",
+      "nl": "",
+      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,newest,\n1.2::artist:bara (03 bara )::,0.8::artist:al guang::,0.8::artist:hoodier::,0.5::artist:nekoya (nekodayo 22)::,0.6::artist:team.achv::,-2::artist collaboration::,\n1girl,solo,pale skin,dragon girl,grey hair,dark blue dragon horn,blue eyes,1.3::broken horn::,1.3::dragon claws::,mole under mouth, slit pupils, long scar aross eye,blonde pupils,dragon pupils, -1::dragon tail::,half closed eyes,bags under eyes,mole,black sclera,\nsallet, mail coif, blue neckerchief, gambeson, diamond quilting, tattered surcoat, tattered cloak, hemp rope belt, plate vambraces, plate greaves, armored gauntlets, dirty leather boots, medieval armor, battle-worn armor,",
+      "undesired_content": "blurry, lowres, error, worst quality, bad anatomy, bad hands, bad quality, jpeg artifacts, bad quality, very displeasing, chromatic aberration, plant,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "off",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "4050210195",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": false,
+    "created_at": "2026-08-01T16:31:52.321Z"
+  },
+  {
+    "id": 1785601554955,
+    "image_url": "/images/1785601554955_E1803D6292A07545CE40968F7FB63664.webp",
+    "blur_image_url": "/images/1785601554955_E1803D6292A07545CE40968F7FB63664_blur.webp",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "1.2::artist:yd_(orange_maru)::,0.6::artist:doppel_(bonnypir)::,0.7::artist:shanyao_jiang_tororo::,",
+      "quality_prompt": "newest,masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "1.2::artist:yd_(orange_maru)::,0.6::artist:doppel_(bonnypir)::,0.7::artist:shanyao_jiang_tororo::,newest,\n1girl,solo,mika_(blue_archive),white pantyhose,nude,hand covered breasts,\nfemale focus,blurry background,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 5.9,
+      "variety": "on",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "821000",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": true,
+    "created_at": "2026-08-01T16:25:58.186Z"
+  },
+  {
+    "id": 1785601162189,
+    "image_url": "/images/1785601162189_0bfd4304c00a2eae25db9d99e5f0296b.webp",
+    "blur_image_url": "/images/1785601162189_0bfd4304c00a2eae25db9d99e5f0296b_blur.webp",
+    "author": "花霖",
+    "model": "nai",
+    "params": {
+      "model_name": "Noval AI v4.5",
+      "style_prompt": "0.7::artist:modare::,0.9::artist:shanyao_jiang_tororo::,1.2::artist:omone_hokoma_agm::,",
+      "quality_prompt": "masterpiece,best quality,very aesthetic,absurdres,high detail,",
+      "nl": "",
+      "base_prompt": "0.7::artist:modare::,0.9::artist:shanyao_jiang_tororo::,1.2::artist:omone_hokoma_agm::,\n1girl,solo,hod_(project_moon),\nahoge,black suit,black pants,small breasts,wide hips,tight pants, skindentation, closed eyes,arms behind head,red necktie,blush,deep skin,lying,hand on ass,so many hands,\nfemale focus,simple background,steaming body,disembodied_hand,hand on thighs,hand on waist,hand on breasts,hand on pussy,\nmasterpiece,best quality,very aesthetic,absurdres,high detail,-2::text::,2::detail eyes::,",
+      "undesired_content": "blurry, lowres, error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing,logo,5::watermarks::,signature,ahoge, censored,bad hands, extra arms,extra eyes, extra hands,extra fingers,bad fingers,2::long neck::,2::censored::,",
+      "resolution": "832×1216",
+      "steps": 28,
+      "prompt_guidance": 6,
+      "variety": "on",
+      "sampler": "Euler a",
+      "schedule": "karras",
+      "seed": "1368546",
+      "characters": [
+        {
+          "name": "Character 1",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 2",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 3",
+          "prompt": "",
+          "undesired_content": ""
+        },
+        {
+          "name": "Character 4",
+          "prompt": "",
+          "undesired_content": ""
+        }
+      ]
+    },
+    "nsfw": true,
+    "created_at": "2026-08-01T16:19:25.258Z"
+  },
+  {
     "id": 1783342710952,
     "image_url": "/images/1783342710952_image (71).png",
     "author": "aa2l",
@@ -158,7 +416,7 @@
         }
       ]
     },
-    "nsfw": false,
+    "nsfw": true,
     "created_at": "2026-07-06T12:33:17.427Z"
   },
   {
