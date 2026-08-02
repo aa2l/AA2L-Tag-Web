@@ -13,6 +13,7 @@ import {
   Eye,
   Search,
   BookOpen,
+  Info,
 } from 'lucide-react';
 import { useGallery } from './_hooks/useGallery';
 import { useComics } from './_hooks/useComics';
@@ -25,13 +26,13 @@ import {
 } from './_components';
 import ComicGrid from './_components/ComicGrid';
 import ComicReader from './_components/ComicReader';
+import AboutContent from './_components/AboutContent';
 import type { ComicSeries } from '@/types/comic';
 
 const BATCH_SIZE = 6;
 
-type ContentType = 'gallery' | 'comics';
+type ContentType = 'gallery' | 'comics' | 'about';
 
-// ===== 排序选项定义（使用 as const 确保类型字面量） =====
 const IMAGE_SORT_OPTIONS = [
   { value: 'newest' as const, label: '最新' },
   { value: 'oldest' as const, label: '最旧' },
@@ -46,7 +47,7 @@ const COMIC_SORT_OPTIONS = [
 
 export default function Gallery() {
   // ============================================================
-  // 图片画廊状态（原有）
+  // 图片画廊状态
   // ============================================================
   const {
     images,
@@ -78,7 +79,7 @@ export default function Gallery() {
   const [isToolbarExpanded, setIsToolbarExpanded] = useState(true);
 
   // ============================================================
-  // 漫画状态（新增）
+  // 漫画状态
   // ============================================================
   const {
     filteredAndSortedComics,
@@ -98,23 +99,24 @@ export default function Gallery() {
   const [readerStartChapterId, setReaderStartChapterId] = useState<string | undefined>(undefined);
 
   // ============================================================
-  // 内容类型切换（一级导航）
+  // 内容类型切换
   // ============================================================
   const [contentType, setContentType] = useState<ContentType>('gallery');
 
-  // 切换内容时重置分页
   useEffect(() => {
     if (contentType === 'gallery') {
       setVisibleCount(BATCH_SIZE);
       setVersion((v) => v + 1);
-    } else {
+      setIsLoadingMore(false);
+    } else if (contentType === 'comics') {
       setComicVisibleCount(BATCH_SIZE);
       setComicVersion((v) => v + 1);
+      setIsComicLoadingMore(false);
     }
   }, [contentType]);
 
   // ============================================================
-  // 图片画廊逻辑（原有，保持不变）
+  // 图片画廊逻辑
   // ============================================================
   const breakpointColumns = {
     default: 4,
@@ -148,17 +150,28 @@ export default function Gallery() {
     }
   }, [searchedAndSortedImages.length, visibleCount]);
 
+  // ===== 修复：数据加载完成后重置 visibleCount =====
+  useEffect(() => {
+    if (searchedAndSortedImages.length > 0 && visibleCount === 0) {
+      setVisibleCount(Math.min(BATCH_SIZE, searchedAndSortedImages.length));
+    }
+  }, [searchedAndSortedImages.length, visibleCount]);
+
   const displayedImages = searchedAndSortedImages.slice(0, visibleCount);
   const hasMore = visibleCount < searchedAndSortedImages.length;
 
   const loadMore = useCallback(() => {
+    // 增强边界保护，防止无效加载
     if (!hasMore || isLoadingMore) return;
+    if (searchedAndSortedImages.length === 0) return;
+    if (visibleCount >= searchedAndSortedImages.length) return;
+
     setIsLoadingMore(true);
     setTimeout(() => {
       setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, searchedAndSortedImages.length));
       setIsLoadingMore(false);
     }, 200);
-  }, [hasMore, isLoadingMore, searchedAndSortedImages.length]);
+  }, [hasMore, isLoadingMore, searchedAndSortedImages.length, visibleCount]);
 
   useEffect(() => {
     if (!loadMoreRef.current || !hasMore || isLoadingMore) return;
@@ -176,10 +189,11 @@ export default function Gallery() {
     );
     observer.observe(loadMoreRef.current);
     return () => observer.disconnect();
-  }, [hasMore, isLoadingMore, loadMore]);
+    // 关键：将 version 加入依赖，确保数据/视图变化时重新绑定观察器
+  }, [hasMore, isLoadingMore, loadMore, version]);
 
   // ============================================================
-  // 漫画滚动加载逻辑（新增）
+  // 漫画滚动加载逻辑
   // ============================================================
   const displayedComics = filteredAndSortedComics.slice(0, comicVisibleCount);
   const hasComicMore = comicVisibleCount < filteredAndSortedComics.length;
@@ -211,7 +225,7 @@ export default function Gallery() {
     );
     observer.observe(comicLoadMoreRef.current);
     return () => observer.disconnect();
-  }, [hasComicMore, isComicLoadingMore, loadComicMore]);
+  }, [hasComicMore, isComicLoadingMore, loadComicMore, comicVersion]);
 
   // ============================================================
   // 主题切换
@@ -281,7 +295,7 @@ export default function Gallery() {
   };
 
   // ============================================================
-  // 漫画阅读器操作（新增）
+  // 漫画阅读器操作
   // ============================================================
   const handleOpenReader = (comic: ComicSeries, startChapterId?: string) => {
     setReaderComic(comic);
@@ -297,7 +311,6 @@ export default function Gallery() {
   // 筛选清除
   // ============================================================
   const hasFilters = searchTerm.trim() !== '' || currentModel !== 'all';
-  const hasComicFilters = comicSearchTerm.trim() !== '';
 
   const clearAllFilters = () => {
     setSearchTerm('');
@@ -336,10 +349,8 @@ export default function Gallery() {
       ============================================================ */}
       <div className="sticky top-0 z-40 toolbar-glass">
         <div className="max-w-7xl mx-auto px-4 py-2">
-          {/* 一级导航 + 操作按钮 */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
-              {/* 一级导航：内容类型切换 */}
               <div className="flex items-center gap-1 bg-pink-50/50 dark:bg-pink-900/10 rounded-full p-0.5 border border-pink-100/50 dark:border-pink-900/20">
                 <button
                   onClick={() => setContentType('gallery')}
@@ -363,9 +374,19 @@ export default function Gallery() {
                   <BookOpen className="w-3.5 h-3.5" />
                   漫画
                 </button>
+                <button
+                  onClick={() => setContentType('about')}
+                  className={`px-3 py-1.5 rounded-full text-sm transition-all duration-200 flex items-center gap-1.5 ${
+                    contentType === 'about'
+                      ? 'bg-pink-200 dark:bg-pink-700/40 text-pink-700 dark:text-pink-200 shadow-sm'
+                      : 'text-secondary hover:text-foreground hover:bg-pink-100/50 dark:hover:bg-pink-900/20'
+                  }`}
+                >
+                  <Info className="w-3.5 h-3.5" />
+                  关于
+                </button>
               </div>
 
-              {/* 工具栏折叠按钮 */}
               <button
                 onClick={toggleToolbar}
                 className="p-1 text-secondary hover:text-foreground transition-transform duration-300"
@@ -414,43 +435,39 @@ export default function Gallery() {
             </div>
           </div>
 
-          {/* 二级工具栏 */}
           <div
             className={`transition-all duration-300 ease-out ${
               isToolbarExpanded ? 'max-h-[120px] opacity-100 mt-2' : 'max-h-0 opacity-0 mt-0'
             }`}
           >
             <div className="flex flex-wrap items-center gap-3 pb-1">
-              {/* ===== 图片模式：ModelTabs ===== */}
               {contentType === 'gallery' && (
                 <div className="flex-shrink-0">
                   <ModelTabs currentModel={currentModel} setCurrentModel={setCurrentModel} />
                 </div>
               )}
 
-              {/* ===== 搜索栏（共用组件，不同状态） ===== */}
-<div className="flex-1 min-w-[200px]">
-  {contentType === 'gallery' ? (
-    <SearchBar<'newest' | 'oldest' | 'random'>
-      searchTerm={searchTerm}
-      setSearchTerm={setSearchTerm}
-      sortType={sortType}
-      setSortType={setSortType}
-      sortOptions={IMAGE_SORT_OPTIONS}
-      placeholder="搜索作者、模型或提示词..."
-    />
-  ) : (
-    <SearchBar<'newest' | 'oldest' | 'title'>
-      searchTerm={comicSearchTerm}
-      setSearchTerm={setComicSearchTerm}
-      sortType={comicSortType}
-      setSortType={setComicSortType}
-      sortOptions={COMIC_SORT_OPTIONS}
-      placeholder="搜索漫画名称或作者..."
-    />
-  )}
-</div>
-
+              <div className="flex-1 min-w-[200px]">
+                {contentType === 'gallery' ? (
+                  <SearchBar<'newest' | 'oldest' | 'random'>
+                    searchTerm={searchTerm}
+                    setSearchTerm={setSearchTerm}
+                    sortType={sortType}
+                    setSortType={setSortType}
+                    sortOptions={IMAGE_SORT_OPTIONS}
+                    placeholder="搜索作者、模型或提示词..."
+                  />
+                ) : contentType === 'comics' ? (
+                  <SearchBar<'newest' | 'oldest' | 'title'>
+                    searchTerm={comicSearchTerm}
+                    setSearchTerm={setComicSearchTerm}
+                    sortType={comicSortType}
+                    setSortType={setComicSortType}
+                    sortOptions={COMIC_SORT_OPTIONS}
+                    placeholder="搜索漫画名称或作者..."
+                  />
+                ) : null}
+              </div>
             </div>
           </div>
         </div>
@@ -461,7 +478,6 @@ export default function Gallery() {
       ============================================================ */}
       <div className="max-w-7xl mx-auto px-4 py-6">
         {contentType === 'gallery' ? (
-          // ===== 图片画廊 =====
           searchedAndSortedImages.length === 0 ? (
             <div className="text-center py-16 px-4 bg-card-soft/80 dark:bg-card-soft/60 backdrop-blur-sm rounded-3xl border-2 border-pink-100 dark:border-pink-900/30 shadow-pink-100/30 dark:shadow-pink-900/20">
               <div className="text-6xl mb-4 flex justify-center">
@@ -544,8 +560,7 @@ export default function Gallery() {
               )}
             </>
           )
-        ) : (
-          // ===== 漫画列表 =====
+        ) : contentType === 'comics' ? (
           <ComicGrid
             comics={displayedComics}
             isUnlocked={isUnlocked}
@@ -555,6 +570,8 @@ export default function Gallery() {
             isLoadingMore={isComicLoadingMore}
             hasMore={hasComicMore}
           />
+        ) : (
+          <AboutContent isUnlocked={isUnlocked} />
         )}
       </div>
 
@@ -572,7 +589,7 @@ export default function Gallery() {
       )}
 
       {/* ============================================================
-      图片弹窗（原有）
+      图片弹窗
       ============================================================ */}
       <ImageModal
         selectedImage={selectedImage}
@@ -585,7 +602,7 @@ export default function Gallery() {
       />
 
       {/* ============================================================
-      NSFW 密钥弹窗（原有）
+      NSFW 密钥弹窗
       ============================================================ */}
       <KeyDialog
         isOpen={showKeyDialog}
@@ -597,7 +614,7 @@ export default function Gallery() {
       />
 
       {/* ============================================================
-      漫画阅读器（新增）
+      漫画阅读器
       ============================================================ */}
       {readerComic && (
         <ComicReader

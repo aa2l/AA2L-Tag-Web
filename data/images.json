@@ -375,51 +375,6 @@
     "created_at": "2026-07-06T12:35:10.657Z"
   },
   {
-    "id": 1783341197403,
-    "image_url": "/images/1783341197403_87dd6dbe55bc2efd26feae31b9eb2343.png",
-    "author": "狐狸猫",
-    "model": "nai",
-    "params": {
-      "model_name": "Noval AI v4.5",
-      "style_prompt": "1.4::artist:shulanshu::,1.2::artist:abpart::,0.8::artist:yukishima_momo::,0.6::artist:shennai misha::,",
-      "quality_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,",
-      "nl": "",
-      "base_prompt": "masterpiece,best quality, amazing quality, very aesthetic,high detail,absurdres,\n1.4::artist:shulanshu::,1.2::artist:abpart::,0.8::artist:yukishima_momo::,0.6::artist:shennai misha::,\n1girl,solo,fox girl,large fox ears,white hair,hair intakes, sidelocks, hair between eyes, long bangs, wavy hair, big hair, hair over shoulder, yelloe eyes,\nmedium breasts,naked towel, washing,messy hair,wet hair,\nsmile,half close eyes,\nclose up,dynamic angle,\nphoto background,washroom,\n1.35::A highly finished photo-style artwork of a character's body that has lively color, graphic texture, realistic skin surface, and lifelike flesh with little obliques::.,The image is highly intricate finished drawn. Only the character's face is in anime style, but their body is in realistic style.,, very aesthetic, masterpiece, no text,",
-      "undesired_content": "",
-      "resolution": "832×1216",
-      "steps": 28,
-      "prompt_guidance": 5,
-      "variety": "off",
-      "sampler": "Euler a",
-      "schedule": "karras",
-      "seed": "2975844976",
-      "characters": [
-        {
-          "name": "Character 1",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 2",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 3",
-          "prompt": "",
-          "undesired_content": ""
-        },
-        {
-          "name": "Character 4",
-          "prompt": "",
-          "undesired_content": ""
-        }
-      ]
-    },
-    "nsfw": true,
-    "created_at": "2026-07-06T12:33:17.427Z"
-  },
-  {
     "id": 1783341017604,
     "image_url": "/images/1783341017604_e0f650addd2af00707d10809bace157b.png",
     "author": "花霖",
