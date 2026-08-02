@@ -28,15 +28,15 @@ interface AboutContentProps {
 export default function AboutContent({ isUnlocked }: AboutContentProps) {
   // 团队成员数据
   const contributors = [
-    { name: 'aa2l', role: '全栈开发 / 内容创作', avatar: '/images/team/aa2l.png' },
+    { name: 'aa2l', role: '开发运维 / 内容创作', avatar: '/images/team/aa2l.png' },
     { name: '花霖Flowerain', role: '内容创作', avatar: '/images/team/花.jpg' },
     { name: '海尔柑子猫', role: '内容创作', avatar: '/images/team/猫.jpg' },
     { name: '星野風禾', role: '内容创作', avatar: '' },
     { name: '泠雨', role: '内容创作', avatar: '' },
-    { name: '㿟君MrWhite', role: '内容创作', avatar: '' },
+    { name: '㿟君MrWhite', role: '内容创作', avatar: '/images/team/㿟.jpg' },
     { name: '狐狸猫', role: '内容创作', avatar: '/images/team/狐.png' },
     { name: '星海之浪', role: '内容创作', avatar: '/images/team/浪.jpg' },
-    { name: '我小三七', role: '内容创作', avatar: '' },
+    { name: '我小三七', role: '内容创作', avatar: '/images/team/三.jpg' },
     { name: 'Grazy鲨鱼', role: '内容创作', avatar: '/images/team/鲨.png' },
   ];
 
