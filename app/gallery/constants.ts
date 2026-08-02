@@ -3,7 +3,7 @@
 import { ModelType } from './types';
 
 // NSFW 解锁密钥
-export const NSFW_KEY = 'AA2L-F103-C8T6';
+export const NSFW_KEY = '1200dcdcdc';
 
 // 所有模型列表
 export const ALL_MODELS: ModelType[] = ['nai', 'sd', 'anima', 'newbie'];
