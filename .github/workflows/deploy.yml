@@ -21,7 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          lfs: true   # ← 关键
+          lfs: true
+
+      - name: Pull LFS files
+        run: git lfs pull
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
