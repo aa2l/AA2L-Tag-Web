@@ -17,7 +17,7 @@ interface ComicReaderProps {
 }
 
 // ===== 缩放步进配置 =====
-const ZOOM_STEPS = [0.5, 0.75, 1, 1.25, 1.5, 2, 2.5];
+const ZOOM_STEPS = [0.2, 0.3, 0.5, 0.75, 1, 1.25, 1.5, 2, 2.5];
 
 type ReaderPage =
   | { type: 'cover'; url: string; blurUrl: string; nsfw: boolean }
