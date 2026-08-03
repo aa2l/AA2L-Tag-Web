@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <p className="text-secondary">正在跳转到图片画廊...</p>
+      <p className="text-secondary">正在跳转到图书馆...</p>
     </div>
   );
 }

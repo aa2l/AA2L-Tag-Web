@@ -31,7 +31,7 @@ export default function AboutContent({ isUnlocked }: AboutContentProps) {
     { name: 'aa2l', role: '开发运维 / 内容创作', avatar: '/images/team/aa2l.png' },
     { name: '花霖Flowerain', role: '内容创作', avatar: '/images/team/花.jpg' },
     { name: '海尔柑子猫', role: '内容创作', avatar: '/images/team/猫.jpg' },
-    { name: '星野風禾', role: '内容创作', avatar: '' },
+    { name: '星野風禾', role: '内容创作', avatar: '/images/team/星.jpg' },
     { name: '泠雨', role: '内容创作', avatar: '/images/team/泠.png' },
     { name: '㿟君MrWhite', role: '内容创作', avatar: '/images/team/㿟.jpg' },
     { name: '狐狸猫', role: '内容创作', avatar: '/images/team/狐.png' },

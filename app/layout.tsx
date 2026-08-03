@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AA2L学社展台",
-  description: "AI 绘画图片画廊",
+  title: "学社图书馆",
+  description: "画廊",
 };
 
 // app/layout.tsx
