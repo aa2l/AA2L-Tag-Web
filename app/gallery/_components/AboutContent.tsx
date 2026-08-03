@@ -40,7 +40,7 @@ export default function AboutContent({ isUnlocked }: AboutContentProps) {
     { name: 'Grazy鲨鱼', role: '内容创作', avatar: '/images/team/鲨.png' },
   ];
 
-  // 领域分类（从底部文案整理而来）
+  // 领域分类
   const domains = [
     {
       icon: <Bot className="w-4 h-4" />,
