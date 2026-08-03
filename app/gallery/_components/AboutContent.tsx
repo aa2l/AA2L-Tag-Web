@@ -18,7 +18,7 @@ import {
   PenTool,
 } from 'lucide-react';
 
-// ===== 获取 basePath =====
+
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/AA2L-Tag-Web' : '';
 
 interface AboutContentProps {
