@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          lfs: true   # ← 关键：启用 LFS 拉取
+          lfs: true   # ← 关键
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
