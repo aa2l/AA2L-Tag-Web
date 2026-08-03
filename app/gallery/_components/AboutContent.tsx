@@ -26,7 +26,7 @@ interface AboutContentProps {
 }
 
 export default function AboutContent({ isUnlocked }: AboutContentProps) {
-  // 团队成员数据
+  
   const contributors = [
     { name: 'aa2l', role: '开发运维 / 内容创作', avatar: '/images/team/aa2l.png' },
     { name: '花霖Flowerain', role: '内容创作', avatar: '/images/team/花.jpg' },
